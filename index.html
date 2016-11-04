@@ -1,96 +1,323 @@
-<!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>KUMAR SHRIDHAR</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Kumar Shridhar</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+<link rel="stylesheet" href="github-activity-0.1.4.min.css">
 
-				<!-- Main -->
-					<section id="main">
-						<header>
-							<span class="avatar"><img src="images/avatar.jpg" alt="" /></span>
-							<h1>KUMAR SHRIDHAR</h1>
-							<p>Artificially Intelligent Guy!</p>
-						</header>
-						<!--
-						<hr />
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="field">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="field">
-								<input type="email" name="email" id="email" placeholder="Email" />
-							</div>
-							<div class="field">
-								<div class="select-wrapper">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-							</div>
-							<div class="field">
-								<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-							</div>
-							<div class="field">
-								<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
-							</div>
-							<div class="field">
-								<label>But are you a robot?</label>
-								<input type="radio" id="robot_yes" name="robot" /><label for="robot_yes">Yes</label>
-								<input type="radio" id="robot_no" name="robot" /><label for="robot_no">No</label>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Get Started</a></li>
-							</ul>
-						</form>
-						<hr />
-						-->
-						<footer>
-							<ul class="icons">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+<script type="text/javascript" src="github-activity-0.1.4.min.js"></script>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+</head> 
 
-						<div class="bottom">
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">                       
+            <img class="profile-image img-responsive pull-left" src="assets/images/shri.png" alt="kumar-shridhar" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Kumar Shridhar</h1>
+                <h2 class="desc">Machine Learning Engineer</h2>   
+                <ul class="social list-inline">
+                    <li><a href="https://www.linkedin.com/in/kumar-shridhar-5b5aa381"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/kumar-shridhar"><i class="fa fa-github-alt"></i></a></li>                        
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:shridhar.stark@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am an Indian currently located in Germany. I am a Masters student studying Computer Science at TU Kaiserslautern, Germany. My area of specialzation is Intelligent systems with my specific interest in Deep Learning. I'm also a freelance developer and data scientist and I love investigating new technologies. You can find me doing competitive coding on Kaggle. I am actively part of a home automation startup (LiveSmart pvt. Ltd) where I put things I learn to use.</p>    
+         
+        <p>I like to travel and meet new people. I wish to end all the pages of my passport someday. I am very fond of animals. Dog lover! </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank">New Name Generator</a></h3>
+                                <p class="summary">Generate names for Indian people using Deep Learning</p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.jpg" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                        </div>
+                                    </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>LSTM (Long Short Term Memory) architecture is used to train and generate names. The model is trained on 72,000 Indian names and the model generates new names based on the trained names.</p>
+                                    <p>The names were evaluated by an Indian Name expert and some names were very logically expressive. </p>
+                                </div><!--//desc-->   
+                                <a class="btn btn-cta-secondary" href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank" style="user-select: text;"><i class="fa fa-github" style="user-select: text;"></i> View on GitHub</a>      
+                                               
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/twitter-word-bird.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank">Twitter Sentiment Analysis</a></h3>
+                                    <p>Every second thousands of tweets are being tweeted on Twitter. Analysis of sentiment of tweets is done to find whether the tweets have positive sentiments associated with it or negative sentiments associated.  </p>
+                                    <p><a class="more-link" href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Project</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="#">Research Work on DoS attacks and prevention</a></h3>
+                                <p class="summary">Designed and implemented a DDoS attack using Python language on a server. The server was wire-sharked and honeypot approach was implemented to the server to trace back the attacker's IP and location.</p>
+                                <p><a class="more-link" href="http://www.ijsr.net/archive/v3i11/T0NUMTQxNTQ0.pdf" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
+                            </div><!--//item-->
+                            
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+                
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+                            <div class="item">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/shridhar743" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/kumar-shridhar/" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:shridhar.stark@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</footer>
-					</section>
+                             <div class="item">
+                                <h3 class="title">Intern - <span class="place"><a href="https://www.dfki.de/">German Research Centre for Artificial Intelligence</a></span> <span class="year">(2016 - present)</span></h3>
+                                <p>Working in a project to develop smart classrooms with modern gesture recognition systems, eye tracking systems and smart web annotations..</p>
+                            </div><!--//item-->
+                                <h3 class="title">Technical Advisor - <span class="place"><a href="http://www.ulivesmart.com/">Live Smart Solutions Pvt. Ltd.</a></span> <span class="year">(2015 - Present)</span></h3>
+                                <p>Live Smart Solutons is a home automation startup based in India. I am currently working with the team to implement machine learning concepts to provide smart home solutions to customers.</p>
+                            </div><!--//item-->
+                         </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
 
-				<!-- Footer -->
-					<footer id="footer">
-					</footer>
 
-			</div>
+                            <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Publications</h2>
+                        <div class="content">
+                            <div class="item">
 
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
+                             <div class="item">
+                                <h3 class="title"><a href="https://www.ijsr.net/archive/v5i3/NOV162122.pdf">Experimental investigation and fabrication of an evacuated tube solar collector </a> <span class="place"> Tushar Choudhary, Kumar Shridhar</span> <span class="year">(Mar 2016)</span></h3>
+                                <p>International Journal of Science and Research (IJSR), Vol 5 Issue 3, pp. 2378 –
+                                83, Nov 2014.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://www.ijsr.net/archive/v3i12/U1VCMTQ1Mjg%3D.pdf"> Honeypots: Approach and Implementation </a><span class="place"><br> Kumar Shridhar, Mayank Jain </span> <span class="year">(Dec 2014)</span></h3>
+                                <p>International Journal of Science and Research (IJSR), Vol 3 Issue 12, pp. 1038 – 43, Dec 2014</p>
+                            </div><!--//item-->
 
-	</body>
-</html>
+                                <h3 class="title"><a href="http://www.ijsr.net/archive/v3i11/T0NUMTQxNTQ0.pdf">A Prevention of DDos Attacks in Cloud Using Honeypot </a><span class="place"><br>Kumar Shridhar, Nikhil Gautam</span> <span class="year">(Nov 2014)</span></h3>
+                                <p>International Journal of Science and Research (IJSR), Vol 3 Issue 11, pp. 2378 – 83, Nov 2014.</p>
+                            </div><!--//item-->
+                            
+                        
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Kaiserslautern, Germany</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">shridhar.stark@gmail.com</a></li>
+                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">https://kumar-shridhar.github.io/</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Areas of Expertise</h2>
+                        <div class="content">
+                            <p class="intro">
+                                Machine Learning, Deep Learning, SVM, Neural Networks, Logistic regression, Recommendation Systems, K Means, Classification of Data, Image segmentation. Image detection, PCA. </p>
+                            
+                            <div class="skillset">
+                               
+                                <div class="item">
+                                    <h3 class="level-title">Python &amp; C/C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">Matlab, Octave &amp; OpenCV<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">TensorFlow, Torch, SciPy &amp; NumPy<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="86%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                                <div class="item">
+                                    <h3 class="level-title">HTML, PHP &amp; CSS <span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="85%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
+                                
+                            </div>              
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//section-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Computer Science</h3>
+                                <h4 class="university">Technical University Kaiserslautern <span class="year">(2016-2018)</span></h4>
+                            </div><!--//item-->
+                            <!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Hindi:</strong></span>
+                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Deutsch:</strong></span>
+                                    <span class="level">Intermediate <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favourite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/strong-extended-mix/7260699">Strong- R3hab, KSHMR </a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/animals-original-mix/4459187">Animals- Martin Garrix</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/tremor-original-mix/5318186">Tremor- Dimitri Vegas, Like Mike</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/going-crazy-extended-mix/8280028">Going Crazy- Hardwell, Blasterjaxx</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/booty-bounce-original-mix/7724210">Booty Bounce- Tujamo</a></li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+                <aside class="list conferences aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">MOOCs</h2>
+                        <div class="content">
+                            <ul class="disc">
+                                <li><i class="Name"></i> <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning </a> </li>
+                                <li><i class="Name"></i> <a href="https://www.udacity.com/course/deep-learning--ud730" target="_blank">Deep Learning </a> </li>
+                                <li><i class="Name"></i> <a href="https://www.udacity.com/course/introduction-to-computer-vision--ud810">Introduction to Computer Vision</a> </li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
+
