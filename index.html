@@ -1,392 +1,317 @@
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
-<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
-<head>
-    <title>Kumar Shridhar</title>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive HTML5 Website Landing Page for Developers">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico">  
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
-    
-    <!-- github calendar css -->
-    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+<!DOCTYPE HTML>
+<!--
+	Ethereal by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Kumar Shridhar</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-<link rel="stylesheet" href="github-activity-0.1.4.min.css">
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-<script type="text/javascript" src="github-activity-0.1.4.min.js"></script>
-    <!-- github acitivity css -->
-    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-    
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-</head> 
+				<!-- Wrapper -->
+					<div id="wrapper">
 
-<body>
-    <!-- ******HEADER****** --> 
-    <header class="header">
-        <div class="container">                       
-            <img class="profile-image img-responsive pull-left" src="assets/images/shri.png" alt="kumar-shridhar" />
-            <div class="profile-content pull-left">
-                <h1 class="name">Kumar Shridhar</h1>
-                <h2 class="desc">Machine Learning Engineer</h2>   
-                <ul class="social list-inline">
-                    <li><a href="https://www.linkedin.com/in/kumar-shridhar-5b5aa381"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="https://github.com/kumar-shridhar"><i class="fa fa-github-alt"></i></a></li>                        
-                </ul> 
-            </div><!--//profile-->
-            <a class="btn btn-cta-primary pull-right" href="mailto:shridhar.stark@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>              
-        </div><!--//container-->
-    </header><!--//header-->
-    
-    <div class="container sections-wrapper">
-        <div class="row">
-            <div class="primary col-md-8 col-sm-12 col-xs-12">
-                <section class="about section">
-                    <div class="section-inner">
-                        <h2 class="heading">About Me</h2>
-                        <div class="content">
-                            <p>I am an Indian currently located in Germany. I am a Masters student studying Computer Science at TU Kaiserslautern, Germany. My area of specialization is Intelligent systems with my specific interest in Deep Learning, Computer Vision and NLP. I'm also a freelance developer and data scientist and I love investigating new technologies. You can find me doing competitive coding on Kaggle. I am actively working with few startups, where I put things I learn to use.</p>    
-         
-        <p>I like to travel and meet new people. I wish to end all pages of my passport someday. I am very fond of animals. Dog lover! </p>
-                         
-                        </div><!--//content-->
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-    
-               <section class="latest section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Projects</h2>
-                        <div class="content">    
-                                               
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank">New Name Generator</a></h3>
-                                <p class="summary">Generate names for Indian people using Deep Learning</p>
-                                <div class="featured-image">
-                                    <a href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/project-featured.jpg" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                        </div>
-                                    </div>
-                                    
-                                <div class="desc text-left">                                    
-                                    <p>LSTM (Long Short Term Memory) architecture is used to train and generate names. The model is trained on 72,000 Indian names and the model generates new names based on the trained names.</p>
-                                    <p>The names were evaluated by an Indian Name expert and some names were very logically expressive. </p>
-                                </div><!--//desc-->   
-                                <a class="btn btn-cta-secondary" href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning" target="_blank" style="user-select: text;"><i class="fa fa-github" style="user-select: text;"></i> View on GitHub</a>      
-                                               
-                            </div><!--//item-->
-                            <hr class="divider" />
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/twitter-word-bird.jpg" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank">Twitter Sentiment Analysis</a></h3>
-                                    <p>Every second thousands of tweets are being tweeted on Twitter. Analysis of sentiment of tweets is done to find whether the tweets have positive sentiments associated with it or negative sentiments associated.  </p>
-                                    <p><a class="more-link" href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div><!--//desc-->                          
-                            </div><!--//item-->
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
+						<!-- Panel (Banner) -->
+							<section class="panel banner right" id="begin">
+								<div class="content color0 span-3-75">
+									<h1 class="major">Hello, my name<br />
+									is Kumar Shridhar</h1>
+									<p>I am an <strong>Indian</strong>, based in Germany. I work as <strong> Co-Chief Scientist </strong> at <a href="http://botsupply.co/">Botsupply</a>. Scroll down to find more about me :)</p>
+									<ul class="actions">
+										<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
+									</ul>
+								</div>
+								<div class="image filtered span-1-75" data-position="25% 25%">
+									<img src="images/pic01.jpg" alt="" />
+								</div>
+							</section>
 
-                
-                <section class="projects section">
-                    <div class="section-inner">
-                        <h2 class="heading">Other Project</h2>
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right" id="first">
+								<div class="content span-7">
+									<h2 class="major">About Me</h2>
+									<p> I am a <strong>Masters student</strong> studying Computer Science at <a href="http://www.uni-kl.de/en/home/"> TU Kaiserslautern, Germany </a>. My area of specialization is Intelligent systems with my specific interest in <strong>Deep Learning, Computer Vision and NLP </strong>. I love investigating new technologies. You can find me doing competitive coding on Kaggle and Numerai (Sometimes). I am actively working with few startups, where I put things I learn to use. <br />
 
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="">Chatbot using sequence to sequence based learning</a></h3>
-                                <p class="summary">The bot will participate in 2017 Loebner Prize.</p>
-                                <p><a class="more-link" href="" target="_blank"><i class="fa fa-external-link"></i> Details coming soon</a></p>
-                            </div><!--//item-->
+									I like to <strong>travel </strong> and meet new people. I wish to end all pages of my passport someday. I am very fond of animals. <strong> Dog lover! </strong></p>
+									<ul class="actions">
+										<ul><a href="#begin" class="button special color1 circle icon fa-angle-left">Previous</a>
+										<a href="#second" class="button special color1 circle icon fa-angle-right">Next</a></ul>
+										
+									</ul>
+								</div>
+								<div class="image filtered tinted" data-position="25% 25%">
+									<img src="images/pic02.jpg" alt="" />
+								</div>
+							</section>
 
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="https://github.com/kumar-shridhar/GoT-Data-Visualization-using-t-SNE">Visualize multi-dimensional data using t-SNE</a></h3>
-                                <p class="summary">Visualization of multi-dimensional Game of Thrones characters dataset in two dimensional space using t-SNE.</p>
-                                <p><a class="more-link" href="https://github.com/kumar-shridhar/GoT-Data-Visualization-using-t-SNE" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
+								
+								<section class="panel color2-alt" id="second">	
+								
+								<div class="inner columns aligned">
 
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><a href="http://www.ijsr.net/archive/v3i11/T0NUMTQxNTQ0.pdf">Research Work on DoS attacks and prevention</a></h3>
-                                <p class="summary">Designed and implemented a DDoS attack using Python language on a server. The server was wire-sharked and honeypot approach was implemented to the server to trace back the attacker's IP and location.</p>
-                                <p><a class="more-link" href="http://www.ijsr.net/archive/v3i11/T0NUMTQxNTQ0.pdf" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                            </div><!--//item-->
-                            
-                            
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
-                
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience</h2>
-                        <div class="content">
-                            <div class="item">
-
-                            <div class="item">
-                                <h3 class="title">Chief Data Scientist - <span class="place"><a href="http://botsupply.co/">BotSupply</a></span> <span class="year">(Jan 2017 - present)</span></h3>
-                                <p>Analyzing the context in bot conversation and to create more intelligent bots. </p>
-                            </div><!--//item-->
-
-                             <div class="item">
-                                <h3 class="title">Machine Learning Engineer - <span class="place"><a href="http://whizleads.com/">WhizLeads</a></span> <span class="year">(Nov 2016 - present)</span></h3>
-                                <p>Generate Intelligent Insights for clients based on their social media activities to help clients make sales tasks and build new business. </p>
-                            </div><!--//item-->
-                                <h3 class="title">Technical Advisor - <span class="place"><a href="http://www.ulivesmart.com/">Live Smart Solutions Pvt. Ltd.</a></span> <span class="year">(2015 - Present)</span></h3>
-                                <p>Working with the team to experiment with new Machine Learning ideas to improve home automation system. </p>
-                            </div><!--//item-->
-                         </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
+								<div class="span-3">
+										<h2 class="major">Education</h2>
+										<h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Computer Science</h3>
+										<p><b><a href="http://www.uni-kl.de/en/home/">Technical University Kaiserslautern </a></b> (2016-2018) </p>
+										
 
 
-                            <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Publications</h2>
-                        <div class="content">
-                            <div class="item">
+									<h2 class="major"><h2> </br>
+									<h2 class="major">Projects on Github</h2>	
+										<div class="table-wrapper">
+											<table>
+												<thead>
+													<tr>
+														
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														
+														<td><a href="https://github.com/kumar-shridhar/Indian-Names-Generator-Using-Deep-Learning">Generate names for Indian people using LSTM </a> </td>
+														
+													</tr>
+													<tr>
+														<td><a href="https://github.com/kumar-shridhar/Twitter_Sentiment_Analysis">Twitter Sentiment Analysis</a> </td>
+														
+													</tr>
+													<tr>
+														<td><a href="https://github.com/kumar-shridhar/GoT-Data-Visualization-using-t-SNE">Game of Thrones Data Visualization</a> </td>
+														
+													</tr>
+													
+												</tbody>
+												<tfoot>
+													<tr>
+														<td colspan="2"></td>
+														
+													</tr>
+												</tfoot>
+											</table>
+										</div>
+									</div>
 
-                             <div class="item">
-                                <h3 class="title"><a href="https://www.ijsr.net/archive/v5i3/NOV162122.pdf">Experimental investigation and fabrication of an evacuated tube solar collector </a> <span class="place"> Tushar Choudhary, Kumar Shridhar</span> <span class="year">(Mar 2016)</span></h3>
-                                <p>International Journal of Science and Research (IJSR), Vol 5 Issue 3, pp. 2378 –
-                                83, Mar 2016.</p>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title"><a href="https://www.ijsr.net/archive/v3i12/U1VCMTQ1Mjg%3D.pdf"> Honeypots: Approach and Implementation </a><span class="place"><br> Kumar Shridhar, Mayank Jain </span> <span class="year">(Dec 2014)</span></h3>
-                                <p>International Journal of Science and Research (IJSR), Vol 3 Issue 12, pp. 1038 – 43, Dec 2014</p>
-                            </div><!--//item-->
+									
+									
 
-                                <h3 class="title"><a href="http://www.ijsr.net/archive/v3i11/T0NUMTQxNTQ0.pdf">A Prevention of DDos Attacks in Cloud Using Honeypot </a><span class="place"><br>Kumar Shridhar, Nikhil Gautam</span> <span class="year">(Nov 2014)</span></h3>
-                                <p>International Journal of Science and Research (IJSR), Vol 3 Issue 11, pp. 2378 – 83, Nov 2014.</p>
-                            </div><!--//item-->
-                            
-                        
-                    </div><!--//secton-inner-->
-                </section><!--//section-->
-            </div><!--//primary-->
-            <div class="secondary col-md-4 col-sm-12 col-xs-12">
-                 <aside class="info aside section">
-                    <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Kaiserslautern, Germany</li>
-                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="#">shridhar.stark@gmail.com</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Website:</span><a href="#">https://kumar-shridhar.github.io/</a></li>
-                            </ul>
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </aside><!--//aside-->
-                
-                <aside class="skills aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Areas of Expertise</h2>
-                        <div class="content">
-                            <p class="intro">
-                                Machine Learning, Deep Learning, Computer Vision, NLP, SVM, Neural Networks, Logistic regression, Reinforcement Learning, Recommendation Systems, K Means, Data Classification, Image segmentation, Image detection, PCA. </p>
-                            
-                            <div class="skillset">
-                               
-                                <div class="item">
-                                    <h3 class="level-title">Python &amp; C/C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Torch, TensorFlow, Caffe &amp; PyTorch<span class="level-label">Expert</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="96%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">Matlab, Octave, OpenCV &amp; SciPy<span class="level-label">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="76%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                <div class="item">
-                                    <h3 class="level-title">HTML, PHP &amp; CSS <span class="level-label">Pro</span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="85%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                </aside><!--//section-->
+									<div class="span-2-25">
+										<h2 class="major">Area of Expertise</h2>
+										<ul class="actions">
+											<li><a href="https://en.wikipedia.org/wiki/Natural_language_processing" class="button special color2">Natural Language Processing</a></li>
+											</ul>
+											<li>Generative Model Chatbots</li>
+											<li>Text Summarization</li>
+											<li>Real time feedback using RL</li>
+											<li>Sentiment Analysis</li>
+											</ul> </br>
 
+										<ul class="actions">
+											<li><a href="https://en.wikipedia.org/wiki/Computer_vision" class="button special color2">Computer Vision</a></li>
+											</ul>
+											<li>Image Recognition</li>
+											<li>Image Captioning using Attention Modeling</li>
+											<li>Generative Adversarial Networks</li>
+											</ul>
+	
+										
+									</div>
 
-                 <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Testimonials</h2>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Without a doubt, Kumar is one of the brightest engineers I have had the opportunity to work with. I have nothing but praise and gratitude for his work and passion. The job was done honestly and with respect. I admire his talents and wish him the best of luck on his future endeavors. </p>
-                                </blockquote>    
-                                <p class="source"><span class="name">Hammad Usmani</span><br /><span </p>            
-                                <p class="source"><span class="name">University of Central Florida</span><br /><span </p>                                                              
-                            </div><!--//item-->
-                            
-                            <p><a class="more-link" href="http://www.upwork.com/o/profiles/users/_~012e585c0d20eba9d1/"><i class="fa fa-external-link"></i> Hire me through UpWork</a></p> 
-                            
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="languages aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Languages</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Hindi:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </span>
-                                </li><!--//item-->
-                                <li class="item">
-                                    <span class="title"><strong>Deutsch:</strong></span>
-                                    <span class="level">Intermediate <br class="visible-sm visible-xs"/><i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i></span>
-                                </li><!--//item-->
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                   
-
-                <aside class="education aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">                      
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> MSc Computer Science</h3>
-                                <h4 class="university">Technical University Kaiserslautern <span class="year">(2016-2018)</span></h4>
-                            </div><!--//item-->
-                            <!--//item-->
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="blog aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Latest Blog Posts</h2>
-                        <p> </p>
-                       <script src="lib/jquery-1.6.4.min.js"></script>
-					    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
-					    <script src="src/jquery.rss.js"></script>
-					    <script>
-					      jQuery(function($) {
-					        $("#rss-feeds").rss("http://medium.com/feed/@shridhar743")
-					      })
-					    </script>
-                        <div id="rss-feeds" class="content">
-
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Conferences</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-calendar"></i> <a href="https://hamburg.city.ai/" target="_blank">City AI </a> (Hamburg, Germany)</li>
-                                <li><i class="fa fa-calendar"></i> <a href="https://journeyxp.com/aigarage/">AI Garage</a> (Copenhagen, Denmark)</li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                            
-                
-                <aside class="list music aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">Favourite coding music</h2>
-                        <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/knhc/6428837">Faded - Alan Walker </a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/strong-extended-mix/7260699">Strong- R3hab, KSHMR </a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/animals-original-mix/4459187">Animals- Martin Garrix</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/tremor-original-mix/5318186">Tremor- Dimitri Vegas, Like Mike</a></li>
-                                <li><i class="fa fa-headphones"></i> <a href="https://www.beatport.com/track/alone-instrumental-remix/8856897">Alone - Alan Walker</a></li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-                <aside class="list conferences aside section">
-                    <div class="section-inner">
-                        <h2 class="heading">MOOCs</h2>
-                        <div class="content">
-                            <ul class="disc">
-                                <li><i class="Name"></i> <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Machine Learning </a> </li>
-                                <li><i class="Name"></i> <a href="https://www.udacity.com/course/deep-learning--ud730" target="_blank">Deep Learning </a> </li>
-                                <li><i class="Name"></i> <a href="https://www.udacity.com/course/introduction-to-computer-vision--ud810">Introduction to Computer Vision</a> </li>
-                            </ul>
-                        </div><!--//content-->
-                    </div><!--//section-inner-->
-                </aside><!--//section-->
-                
-              
-            </div><!--//secondary-->    
-        </div><!--//row-->
-    </div><!--//masonry-->
-    
-    <!-- ******FOOTER****** --> 
-    <footer class="footer">
-        <div class="container text-center">
-                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-        </div><!--//container-->
-    </footer><!--//footer-->
+									
+										
+									<div class="span-3">
+										<h3>Testimonial</h3>
+										<blockquote> <strong> Shridhar </strong> possesses extensive knowledge in the field of <strong>Machine Learning and Artificial Intelligence </strong>. He's a very resourceful scientist able to apply his expertise in different fields always and obtain successful outcomes. His research focus at BotSupply is on <strong>Computer Vision algorithms </strong>and he's also involved in developing <strong>Deep Learning systems for Natural Language Processing. </strong> I work with Shridhar on a daily basis and I can say that beyond his unquestionable professionalism he's a fantastic person to work with and a great friend. 
+										</br>- <strong><a href="https://www.linkedin.com/in/giovannitoschi/"> Giovanni Toschi ,</a> 
+										  Founder    <a href="http://botsupply.co/"> (Botsupply) </a></blockquote> </strong>
  
-    <!-- Javascript -->          
-    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
-    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
-    <!-- github calendar plugin -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
-    <!-- github activity plugin -->
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
-    <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
-</body>
-</html> 
+										<ul><a href="#first" class="button special color1 circle icon fa-angle-left">Previous</a>
+										<a href="#third" class="button special color1 circle icon fa-angle-right">Next</a></ul>
+									</div>
+									
+									
+						
+					</div>
 
+
+						<!-- Panel -->
+
+						<section class="panel color2-alt" id="third">
+								<div class="intro color1">
+									<h2 class="major"><h1>Blogs</h1></h2>
+									<p> Scroll down to read my Blogs in details </p>
+
+									
+								
+
+								</div>
+										
+								
+
+						
+							<section class="panel color2-alt">
+								<div class="intro color2">
+									<h2 class="major"><h2><a href="https://medium.com/towards-data-science/how-to-version-control-your-machine-learning-task-cad74dce44c4">How to Version Control your Machine Learning task</a></h2></h2>
+									<p>Version Control is very important component in Machine Learning Tasks and storing all the data and models at one place on Git is not a feasible solution. Check this blog to solve the issue. </p>
+
+								<li class="icon fa-medium"><a href="https://medium.com/towards-data-science/how-to-version-control-your-machine-learning-task-cad74dce44c4">   Read more on Medium </a></li>	
+
+								</div>
+										
+								</section>
+
+							<section class="panel color2-alt">
+								<div class="intro color4">
+									<h2 class="major"><h2><a href="https://medium.com/@shridhar743/step-by-step-guide-to-make-a-dumb-bot-smart-32343334cd6c"> Step by Step guide to make a dumb bot smart</a></h2></h2>
+									<p>A lot of chatbots are there in market, but most of them struggle in delivering to the customer expectation. I have discussed how to make any dumb bot smart in this blog.  </p>
+
+								<li class="icon fa-medium"><a href="https://medium.com/@shridhar743/step-by-step-guide-to-make-a-dumb-bot-smart-32343334cd6c">   Read more on Medium </a></li>	
+
+								</div>
+										
+								</section>
+
+
+								<section class="panel color2-alt">
+								<div class="intro color5">
+									<h2 class="major"><h2><a href="https://medium.com/botsupply/generative-model-chatbots-e422ab08461e">Generative Model Chatbots</a></h2></h2>
+									<p> How about a chatbot that learns how to generate the answers on the fly instead of replying with a hard coded answer. Read this blog to know how the bot performs.  </p>
+
+								<li class="icon fa-medium"><a href="https://medium.com/botsupply/generative-model-chatbots-e422ab08461e">   Read more on Medium </a></li>	</br>
+
+								<ul><a href="#second" class="button special color1 circle icon fa-angle-left">Previous</a>
+										<a href="#between" class="button special color1 circle icon fa-angle-right">Next</a></ul>
+
+								</div>
+										
+								</section>
+
+								<section class="panel color2-alt">
+								<div class="intro color4">
+									<h2 class="major"><h2><a href="https://medium.com/@shridhar743/a-beginners-guide-to-deep-learning-5ee814cf7706"> A Beginners Guide to Deep Learning</a></h2></h2>
+									<p>Read this blog to learn all the terminlogies used in Deep Learing and to know the major architectures used in Deep Learning.  </p>
+
+
+								<li class="icon fa-medium"><a href="https://medium.com/@shridhar743/a-beginners-guide-to-deep-learning-5ee814cf7706">   Read more on Medium </a></li>	
+
+
+								</div>
+
+								</section>
+
+								<section class="panel color2-alt" id="between">
+								<div class="intro color5">
+									<h2 class="major"><h2><a href="https://medium.com/botsupply/rule-based-bots-vs-ai-bots-b60cdb786ffa">Rule based bots vs AI bots</a></h2></h2>
+									<p> There are two types of Bots: Those who are dumb enough to follow rules and those who create their own rules. Read the blog to create a badass bot.  </p>
+
+								<li class="icon fa-medium"><a href="https://medium.com/botsupply/rule-based-bots-vs-ai-bots-b60cdb786ffa">   Read more on Medium </a></li>	
+
+								</div>
+										
+								</section>
+
+								<section class="panel color2-alt" >
+								<div class="intro color4">
+									<h2 class="major"><h2><a href="https://chatbotsmagazine.com/how-close-are-chatbots-to-pass-turing-test-33f27b18305e"> How Close Are Chatbots To Passing The Turing Test?</a></h2></h2>
+									<p>A question on everyone's mind: Can a machine be ever as intelligent as humans? Read the blog to know my take on this.  </p>
+
+								<li class="icon fa-medium"><a href="https://chatbotsmagazine.com/how-close-are-chatbots-to-pass-turing-test-33f27b18305e">   Read more on Medium </a></li>	
+
+								</div>
+
+								</section>
+										
+								
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight large left" id="between2" >
+								<div class="content span-5">
+									<h2 class="major"></h2>
+									<h2> Travelling </h2>
+									<p><strong> Travelling </strong> is the best thing anyone can do. I have travelled to some of the most beautiful places in the world. Scroll down to see some of my travelling pics from some of the popular destinations in the world. Find me on Instagram <strong> (@iam_shridhar) </strong> for more pics </p>
+
+									<ul><a href="#fourth" class="button special color1 circle icon fa-angle-right">Next</a></ul>
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+							</section>
+
+
+						<!-- Panel -->
+							<section class="panel" id="fourth">
+								
+								<div class="gallery">
+									<div class="group span-3">
+										<a href="images/gallery/fulls/01.jpg" class="image filtered span-3" data-position="bottom"><img src="images/gallery/thumbs/01.jpg" alt="" /></a>
+										<a href="images/gallery/fulls/02.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/02.jpg" alt="" /></a>
+										<a href="images/gallery/fulls/03.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/03.jpg" alt="" /></a>
+									</div>
+									<a href="images/gallery/fulls/04.jpg" class="image filtered span-2-5" data-position="top"><img src="images/gallery/thumbs/04.jpg" alt="" /></a>
+									<div class="group span-4-5">
+										<a href="images/gallery/fulls/05.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/05.jpg" alt="" /></a>
+										<a href="images/gallery/fulls/06.jpg" class="image filtered span-1-5" data-position="center"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+										<a href="images/gallery/fulls/07.jpg" class="image filtered span-1-5" data-position="bottom"><img src="images/gallery/thumbs/07.jpg" alt="" /></a>
+										<a href="images/gallery/fulls/08.jpg" class="image filtered span-3" data-position="top"><img src="images/gallery/thumbs/08.jpg" alt="" /></a>
+									</div>
+									<a href="images/gallery/fulls/09.jpg" class="image filtered span-2-5" data-position="right"><img src="images/gallery/thumbs/09.jpg" alt="" /></a>
+								</div>
+							</section>
+
+						<!-- Panel -->
+							<section class="panel color4-alt">
+								
+								<div class="inner columns divided" id="fifth">
+									<div class="span-3-25">
+										<h1 class="major">Contact</h1>
+
+										<p>Glad to see that you made all your way up here. Feel free to say <b> Hi </b> anytime. 
+										</br>
+										
+
+
+									Oh, And I won't mind if you check me on other <b>Social Media </b>  platform. </br>
+									</br>
+									Thank you for visiting :)</p>
+
+									<a class="btn btn-cta-primary pull-right" href="mailto:shridhar.stark@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+
+									<ul><a href="#between2" class="button special color1 circle icon fa-angle-left">Previous</a>
+									</div>
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon fa-facebook"><a href="https://www.facebook.com/shridhar743">facebook.com/shridhar743</a></li>
+											<li class="icon fa-medium"><a href="https://medium.com/@shridhar743">medium.com/@shridhar743</a></li>
+											<li class="icon fa-github"><a href="https://github.com/kumar-shridhar/"> kumar-shridhar</a></li>
+											<li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/kumar-shridhar-5b5aa381/">kumar shridhar</a></li>
+											<li class="icon fa-instagram"><a href="https://www.instagram.com/iam_shridhar/">@iam_shridhar</a></li>
+											
+											
+										</ul>
+									</div>
+								</div>
+							</section>
+
+								
+									
+									
+						
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
