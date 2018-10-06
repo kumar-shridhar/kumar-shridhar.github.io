@@ -1,0 +1,33 @@
+/* line 1, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab {
+  background-color: #20738D;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  text-align: center;
+  padding: 15px 0;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+  color: white; }
+
+/* line 9, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab.active {
+  background-color: #2D859E; }
+
+/* line 12, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab:hover {
+  background-color: #2D859E; }
+
+/* line 15, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab:first-child {
+  border-radius: 10px 0 0 0; }
+
+/* line 18, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab:last-child {
+  border-radius: 0 10px 0 0; }
+
+/* line 21, /Users/ick.kramer/code/resume/source/stylesheets/components/skill_tab.scss */
+.skill_tab-background {
+  background-color: rgba(67, 144, 168, 0.7);
+  padding: 30px 0px; }
