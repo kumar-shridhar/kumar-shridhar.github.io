@@ -1,226 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <title>Kumar Shridhar</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Menu CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-
-  </head>
-  <style>
-  body {
-    /* background-image: url(assets/img/back.jpg); */
-    background-repeat: no-repeat;
-    }
-
-  </style>
-
-  <body>
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-              <span class="icon-menu"></span>
-            </button>
-            <!-- <a href="https://neuralspace.ai/" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a> -->
+<!doctype html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Personal Website">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Kumar Shridhar</title>
+      <link rel="stylesheet" href="assets/css/dropcast.css">
+      <link rel="author" href="Kumar Shridhar">
+      <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Rufina:400,700|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    </head>
+    <body>
+      <div id="site__bg"></div>
+      <div class="main">
+        <nav>
+          <div class="logo nav__logo">
+            <a href="index.html"><img src="assets/images/logo.svg" alt="logo"/></a>
           </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#about">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://drive.google.com/file/d/1KkUFcyYPMw3yDG0PXa6EXSJXm9qTBDTE/view?usp=sharing">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en">
-                  Publications
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mailto:shridhar.stark@gmail.com">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mobile Menu Start -->
-        <ul class="onepage-nev mobile-menu">
-          <li>
-            <a href="#about">Home</a>
-          </li>
-          <li>
-            <a href="https://drive.google.com/file/d/1KkUFcyYPMw3yDG0PXa6EXSJXm9qTBDTE/view?usp=sharing">resume</a>
-          </li>
-          <li>
-            <a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en">Publications</a>
-          </li>
-          <li>
-            <a href="mailto:shridhar.stark@gmail.com">Contact</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Start of Async Drift Code -->
-<script>
-"use strict";
-
-!function() {
-  var t = window.driftt = window.drift = window.driftt || [];
-  if (!t.init) {
-    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-    t.factory = function(e) {
-      return function() {
-        var n = Array.prototype.slice.call(arguments);
-        return n.unshift(e), t.push(n), t;
-      };
-    }, t.methods.forEach(function(e) {
-      t[e] = t.factory(e);
-    }), t.load = function(t) {
-      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-      var i = document.getElementsByTagName("script")[0];
-      i.parentNode.insertBefore(o, i);
-    };
-  }
-}();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('z9mg4ans3rad');
-</script>
-<!-- End of Async Drift Code -->
-      
-
-    </header>
-    <!-- Header Area wrapper End -->
-
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
+          <ul class="nav__social">
+            <li><a href="https://github.com/kumar-shridhar"><i class="fab fa-github fa-lg"></i></a></li>
+            <li><a href="https://twitter.com/JupyterAI"I><i class="fab fa-twitter fa-lg" ></i></a></li>
+            <li><a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en"><i class="fa fa-graduation-cap fa-lg"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kumar-shridhar/"><i class="fab fa-linkedin fa-lg"></i></a></li>
+            <li><a href="mailto:shridhar.stark@gmail.com"I><i class="fa fa-envelope fa-lg" ></i></a></li>
+            <li><a href="https://drive.google.com/file/d/1mmbi6kG4Fb-BJmZoUHYaczKFti-y7CTA/view?usp=sharing"I><i class="fa fa-paperclip fa-lg" ></i></a></li>
+          </ul>
+        </nav>
+        <section class="site">
+          <h1 class="site__title site__title--separator">Kumar Shridhar</h1>
+          
+          <p class="site__description">I am a <b>third year Ph.D. student</b> at <a href="https://www.mrinmaya.io/">ETH Zürich</a> in Switzerland, supervised by <a href="https://sites.google.com/site/mrinsachan/">Prof. Mrinmaya Sachan </a> and <a href = "https://people.cs.umass.edu/~nmonath/"> Nicholas Monath </a> from Google DeepMind. 
+            <br>
+            <br> My research and professional interests are centered around <b>Natural Language Processing</b> and <b>Machine Learning</b> 
+            in general, especially towards understanding the <b>reasoning capabilities of LLMs</b>. My PhD research investigates <b> how generative 
+            LLMs reason, what factors influence their reasoning performance.</b>, and <b>how to optimize their reasoning abilities.</b> <br>
+            
+            <br> <br>
+            During my PhD, I spent my summers as an intern at <b>FAIR, Meta</b> with <a href = "http://asli.us/">Asli Celikyilmaz </a> on agent-based 
+            reasoning, at <b>Microsoft Research</b> with <a href = "https://patrickxia.me/">Patrick Xia </a> and <a href = "https://www.cs.jhu.edu/~jason/">Jason Eisner </a> 
+            on improving the reasoning capabilities of LLMs by revising their output, and
+            at <b>Amazon Alexa AI</b> on setting constraints on the output space of a neural network. 
+            <br> <br>
+            I have experience with <b>fine-tuning LLMs at scale</b> (up to LLAMA 70B), <b> distilling reasoning capabilities from 
+            larger models (GPT-4 and chatGPT) to smaller models</b> (LLAMA 7B, T5, GPT-2), and <b> aligning LLMs to  generate more accurate 
+            and contextually appropriate responses (PPO, RLHF)</b>. 
+            <br> <br>
+            Before starting my PhD, I gained valuable experience in researching and deploying conversational AI systems  at <a href = "https://insiders-technologies.com/en/">Insiders Technology GmbH </a> 
+            and <a href = "https://www.ait.ac.at/">NeuralSpace </a>.
+            I also worked with Prof. <a href="https://www.ltu.se/staff/m/marliw-1.177225?l=en"> Marcus Liwicki </a> and Prof. 
+            <a href = "https://human.ait.kyushu-u.ac.jp/~uchida/index-e.html" >Seiichi Uchida </a> during my masters studies.
+            <br> <br>
+            In my free time, I enjoy <b>playing tennis, reading about conspiracy theories</b>,  and <b>collecting sneakers</b>.
+</p>
+        </section>
+        <section class="episodes">
+          <article class="episode">
+            <h2 class="episode__number">01</h2>
+            <div class="episode__media">
+              <a href="screws.html" class="episode__image"></a>
             </div>
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Kumar Shridhar</h3>
-              I am a second year <b>PhD student</b> at <a href="https://ethz.ch/en.html">ETH Zürich</a> in Switzerland, supervised by <a href="https://sites.google.com/site/mrinsachan/">Prof. Mrinmaya Sachan </a> and <a href = "https://people.cs.umass.edu/~nmonath/"> Nicholas Monath </a> from Google. 
-              I work on <b>understanding the reasoning capabilities of generative LLMs</b>. 
-              I also work closely with <a href = "https://carl-allen.github.io/"> Carl Allen</a> (Post doc at ETH AI Center) and <a href = "https://scholar.google.com/citations?user=A33FhJMAAAAJ&hl=en"> Manzil Zaheer</a>
-              (Research Scientist at Deepmind).
-              Before that, I was a Masters student at the University of Kaiserslautern, Germany and worked with Prof. <a href="https://www.ltu.se/staff/m/marliw-1.177225?l=en"> Marcus Liwicki </a> on <a href = "https://arxiv.org/abs/1901.02731" >Bayesian CNNs with variational inference</a>.
-              <br> <br>
-              I spent my last summer interning at <b>Amazon Alexa AI</b> where I worked on setting constraints on the output space of a Neural Network. Before that, I was an NLP researcher at BotSupply, 
-              student assistant at <a href = "https://www.dfki.de/web/ueber-uns/standorte-kontakt/kaiserslautern" >DFKI (German Research Center for AI) </a> and <a href = "https://insiders-technologies.com/en/">Insiders Technology GmbH </a>
-              and worked on estimating the uncertainites with the air quality station at <a href = "https://www.ecmwf.int/"> European Center for Weather Forecasts</a>.
-              I also worked with Prof. <a href = "https://human.ait.kyushu-u.ac.jp/~uchida/index-e.html" >Seiichi Uchida </a> at Kyushu University on designing a probabilistic activation function during my visit to Uchida lab in Japan. 
-
-
-              <br>
-              <br>
-              <!-- I am also the founder of <a href="https://neuralspace.ai/">NeuralSpace </a>, where we want to bring the research-level NLP practices to the industry in developing nations like India. 
-              In my free time, I like to travel and eat good food.</p>  -->
-              <!-- <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Kumar Shridhar</span></li>
-                  <li><span class="pro-title"> Affliations </span> <span class="pro-detail">ETH Zürich, NeuralSpace</span></li>
-                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">shridhar.stark[at]gmail[dot]com</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">Switzerland</span></li> 
-                </ul>
-              </div> -->
-              
-              <a href="https://drive.google.com/file/d/1KkUFcyYPMw3yDG0PXa6EXSJXm9qTBDTE/view?usp=sharing" class="btn btn-primary"> CV</a>
-              <a href="mailto:shridhar.stark@gmail.com" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+            <div class="episode__detail">
+              <a href="screws.html" class="episode__title"><h4>SCREWS: Reasoning with Revisions</h4></a>
+              <p class="episode__description">A framework that explores how reasoning can be improved in LLMs by iteratively refining the outputs</p>
             </div>
+          </article>
+          <article class="episode">
+            <h2 class="episode__number">02</h2>
+            <div class="episode__media">
+              <a href="distill.html" class="episode__image"></a>
             </div>
-             </div>
-          </div>   
-        </div>
+            <div class="episode__detail">
+              <a href="distill.html" class="episode__title"><h4>Distilling Smaller Models to Reason</h4></a>
+              <p class="episode__description">Can reasoning be distilled from an larger model to a smaller model?</p>
+            </div>
+          </article>
+          <article class="episode">
+            <h2 class="episode__number">03</h2>
+            <div class="episode__media">
+              <a href="socratic.html" class="episode__image"></a>
+            </div>
+            <div class="episode__detail">
+              <a href="socratic.html" class="episode__title"><h4>Socratic Decomposition for Reasoning</h4></a>
+              <p class="episode__description">Can decomposition of problem into simpler problems assist students in learning a concept better?</p>
+            </div>
+          </article>
+          <article class="episode">
+            <h2 class="episode__number">04</h2>
+            <div class="episode__media">
+              <a href="causal.html" class="episode__image"></a>
+            </div>
+            <div class="episode__detail">
+              <a href="causal.html" class="episode__title"><h4>Causal Framework for Math Reasoning </h4></a>
+              <p class="episode__description"> A Causal Framework to quantify the robustness of mathematical reasoning with language models</p>
+            </div>
+          </article>
+          <article class="episode">
+            <h2 class="episode__number">05</h2>
+            <div class="episode__media">
+              <a href="dd.html" class="episode__image"></a>
+            </div>
+            <div class="episode__detail">
+              <a href="dd.html" class="episode__title"><h4>Dynamic Dropout to Train Sequence VAEs</h4></a>
+              <p class="episode__description">An adversarial training strategy to achieve information-based stochastic dropout to train sequence VAEs.</p>
+            </div>
+          </article>
+          <article class="episode">
+            <h2 class="episode__number">06</h2>
+            <div class="episode__media">
+              <a href="longtonotes.html" class="episode__image"></a>
+            </div>
+            <div class="episode__detail">
+              <a href="longtonotes.html" class="episode__title"><h4>LongtoNotes: OntoNotes with longer coref </h4></a>
+              <p class="episode__description">LongtoNotes is a corpus of coreference-annotated documents which are up to 8x the length of documents in Ontonotes.</p>
+            </div>
+          </article>
+          
+        </section>
       </div>
-    </section>
-    <!-- About Section End -->
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
-              <ul class="social-icon">
-                
-                <li><a href="https://www.linkedin.com/in/kumar-shridhar/"><i class="fa fa-linkedin fa-lg" style="color:white"></i></a></li>
-        <li><a href="https://github.com/kumar-shridhar"><i class="fa fa-github fa-lg" style="color:white"></i></a></li>
-        <li><a href="https://twitter.com/JupyterAI"I><i class="fa fa-twitter fa-lg" style="color:white"></i></a></li>
-        <li><a href="https://medium.com/@shridhar743"><i class="fa fa-medium fa-lg" style="color:white"></i></a></li>
-        <li><a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en"><i class="fa fa-google fa-lg" style="color:white"></i></a></li>
-     
-              </ul>
-            </div>
-          </div>
+      <!-- <footer>
+        <p class="footer__content">Kumar Shridhar</p>
+        <div class="logo footer__logo">
+          <a href="https://tympanus.net/codrops/"><img src="assets/images/logo-white.svg" alt="logo"/></a>
         </div>
-      </div>
-
-      <a href="https://info.flagcounter.com/7teJ"><img src="https://s04.flagcounter.com/count2/7teJ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
-
-
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
-      
-  </body>
+      </footer> -->
+      <script src="assets/js/dropcast.js"></script>
+    </body>
 </html>
