@@ -1,172 +1,345 @@
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Kumar Shridhar</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kumar Shridhar </title>
+    <meta
+      name="description"
+      content="Kumar Shridhar is a Machine Learning researcher obsessed with making reasoning models."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              sand: '#f6f2ea',
+              night: '#0f172a',
+              ink: '#1c1c1c',
+              acid: '#c6ff3f',
+              lilac: '#b7a6ff',
+              peach: '#ffb38a',
+            },
+            fontFamily: {
+              grotesk: ['"Space Grotesk"', 'sans-serif'],
+              mono: ['"Space Mono"', 'monospace'],
+            },
+            boxShadow: {
+              brutal: '8px 8px 0 0 rgba(12,18,32,0.75)',
+              'brutal-soft': '4px 4px 0 0 rgba(12,18,32,0.5)',
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="font-grotesk bg-sand text-ink selection:bg-acid selection:text-ink antialiased">
+    <div class="grain-layer" aria-hidden="true"></div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <header class="sticky top-0 z-40 border-b-4 border-ink bg-sand/95 backdrop-blur-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5">
+        <a href="#hero" class="text-2xl font-mono tracking-tight uppercase text-ink">Kumar Shridhar<span class="text-night">.</span></a>
+        <nav class="hidden items-center gap-6 text-sm font-mono uppercase tracking-widest md:flex">
+          <a class="nav-link" href="#hero">Intro</a>
+          <a class="nav-link" href="#work">Research</a>
+          <a class="nav-link" href="#experience">Experience</a>
+          <a class="nav-link" href="#connect">Connect</a>
+        </nav>
+        <a
+          href="mailto:shridhar.stark@gmail.com"
+          class="relative inline-flex items-center gap-2 border-3 border-ink bg-acid px-4 py-2 text-xs font-mono uppercase tracking-[0.3em] text-ink shadow-brutal transition hover:-translate-y-1"
+        >
+          Ping me
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+    <section class="news-marquee-wrapper" aria-label="Latest news">
+      <div class="news-marquee">
+        <div class="news-marquee__track">
+          <span>I will be at NeurIPS in San Diego.</span>
+          <span>Our latest work on LLM Fusion paper got accepted at EMNLP 2025.</span>
+        </div>
+      </div>
+    </section>
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>Kumar Shridhar</strong> - PhD Student @ ETH Zürich</a>
-									<ul class="icons">
-										<li><a href="https://twitter.com/JupyterAI" class="icon brands fa-twitter fa-lg"><span class="label">Twitter</span></a></li>
-										<li><a href="https://github.com/kumar-shridhar" class="icon brands fa-github fa-lg"><span class="label">GitHub</span></a></li>
-										<li><a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en" class="icon brands fa-brands fa-google-plus fa-lg"><span class="label">GoogleScholar</span></a></li>
-										<li><a href="https://www.linkedin.com/in/kumar-shridhar" class="icon brands fa-linkedin-in fa-lg"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://drive.google.com/file/d/18C_s2xjMzuxl9RHi64kXgGbzOK8XL5bf/view?usp=sharing" class="icon brands fa-google-drive fa-lg"><span class="label">Drive</span></a></li>
-										<li><a href="mailto:shridhar.stark@gmail.com" class="icon solid fa-envelope fa-lg"><span class="label">Email</span></a></li>
-										
+    <main class="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-16">
+      <section
+        id="hero"
+        data-scroll
+        class="grid gap-10 rounded-[32px] border-4 border-ink bg-white p-10 shadow-brutal lg:grid-cols-[1.1fr,0.9fr]"
+      >
+        <div class="space-y-6">
+          <p class="text-sm font-mono uppercase tracking-[0.4em] text-night">ML Researcher — San Francisco</p>
+          <h1 class="text-5xl font-mono uppercase leading-none text-night md:text-6xl">
+            Hi! I am <br />
+            <span class="crazy-name">Shridhar</span><br />
+          </h1>
+          <p class="max-w-xl text-lg leading-relaxed text-night/80">
+            I am a Machine Learning researcher building language models that can deconstruct reasoning
+            problems, improvise, and critique themselves. Currently designing an effective LLM routing system at
+            <a class="link-simple link-ema" href="https://www.ema.co" target="_blank" rel="noreferrer">Ema</a>.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+            <a
+              href="https://drive.google.com/file/d/1T4N9zJyfRDfICTCe4U8t1xxgZ-3_zQj8/view?usp=sharing"
+              class="hero-cta bg-peach text-night"
+              >Download CV</a
+            >
+            <a href="#connect" class="hero-cta bg-lilac text-night">Collaborate</a>
+          </div>
+          <div class="grid gap-4 text-sm font-mono uppercase">
+            <div class="flex items-center gap-6">
+              <span class="badge">ETH Zürich</span>
+              <span class="badge">Meta FAIR</span>
+              <span class="badge">Microsoft Research</span>
+            </div>
+            <div class="flex flex-wrap gap-4 text-base">
+              <a class="hover:text-night" href="https://twitter.com/JupyterAI">Twitter ↗</a>
+              <a class="hover:text-night" href="https://github.com/kumar-shridhar">GitHub ↗</a>
+              <a class="hover:text-night" href="https://www.linkedin.com/in/kumar-shridhar">LinkedIn ↗</a>
+              <a class="hover:text-night" href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en"> Google Scholar ↗</a>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="relative overflow-hidden rounded-[24px] border-4 border-ink bg-lilac/30 p-4 shadow-brutal">
+          <img
+            src="images/main_pic.jpg"
+            alt="Kumar standing on a snowy mountain range"
+            class="relative h-full w-full rounded-[18px] border-4 border-ink object-cover shadow-brutal-soft"
+          />
+          <p class="mt-4 text-xs font-mono uppercase tracking-[0.4em] text-night">Glacier 3000 • Switzerland</p>
+        </div>
+      </section>
+
+      
+
+      <section
+        id="work"
+        data-scroll
+        class="space-y-10 rounded-[32px] border-4 border-ink bg-acid/40 p-10 shadow-brutal"
+      >
+        <div class="flex flex-wrap items-baseline gap-4">
+          <p class="text-xs font-mono uppercase tracking-[0.5em] text-night">Work</p>
+          <h2 class="text-4xl font-mono uppercase leading-none text-night">Selected Research</h2>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-2">
+          <article class="work-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--loud">ACL 2023</span>
+              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Distillation</span>
+            </div>
+            <h3>Distilling Reasoning into Smaller Models</h3>
+            <p>
+              Distill a large model's reasoning into small cooperating models 
+              that can learn to solve complex reasoning tasks nearly as well as much larger LMs 
+              but with far fewer parameters.
+            </p>
+            <a class="underline" href="https://aclanthology.org/2023.findings-acl.441/">Paper ↗</a>
+          </article>
+
+          <article class="work-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--loud">ACL 2025</span>
+              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Distillation</span>
+            </div>
+            <h3>SIKeD: Self-guided Iterative Knowledge Distillation</h3>
+            <p>
+            Self guided distillation where a student decides when to explore new learning with teacher 
+            and when to exploit and solidify what it knows.
+            </p>
+            <a class="underline" href="https://aclanthology.org/2025.findings-acl.513/">Paper ↗</a>
+          </article>
+
+          <article class="work-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--peach">NAACL 2024</span>
+              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Refinement</span>
+            </div>
+            <h3>The ART of LLM Refinement: ASK, REFINE, TRUST</h3>
+            <p>A refinement paradigm where an asker asks questions to decided when an LLM should refine its outputs 
+              and a truster decides whether to trust the refined answer.</p>
+            <a class="underline" href="https://arxiv.org/abs/2311.07961">Paper ↗</a>
+          </article>
+
+          <article class="work-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--lilac">EMNLP 2022</span>
+              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Decomposition</span>
+            </div>
+            <h3>Socratic Subquestions for Teaching Math Word Problems</h3>
+            <p>Socratic style decomposition to guide language models to break complex problems into simpler ones and then solve it iteratively.</p>
+            <a class="underline" href="https://aclanthology.org/2022.emnlp-main.277/">Paper ↗</a>
+          </article>
+        </div>
+        <div class="grid gap-6 border-t-4 border-dashed border-ink pt-8 md:grid-cols-3">
+          <article class="project-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--lilac pill--mini">EMNLP 2025</span>
+              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Routing</span>
+            </div>
+            <h4>LLM Fusion</h4>
+            <p>Taxonomy guided Routing for LLMs.</p>
+            <a class="underline" href="https://aclanthology.org/2025.emnlp-industry.28/">Paper ↗</a>
+          </article>
+          <article class="project-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--brown pill--mini">AAAI 2025</span>
+              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Calibration</span>
+            </div>
+            <h4>LLM Calibration</h4>
+            <p>Gauging the confidence of LLMs. </p>
+            <a class="underline" href="https://ojs.aaai.org/index.php/AAAI/article/view/34120">Paper ↗</a>
+          </article>
+          <article class="project-card">
+            <div class="flex items-center justify-between">
+              <span class="pill pill--night pill--mini">NeurIPS 2022</span>
+              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Generative</span>
+            </div>
+            <h4>Variational AutoEncoders</h4>
+            <p>Adversarial approach to train VAEs.</p>
+            <a class="underline" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/3ed57b293db0aab7cc30c44f45262348-Abstract-Conference.html">Paper ↗</a>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="experience"
+        data-scroll
+        class="space-y-8 rounded-[32px] border-4 border-ink bg-night text-sand p-10 shadow-brutal"
+      >
+        <div class="flex flex-wrap items-start justify-between gap-6">
+          <div class="space-y-4 max-w-3xl">
+            <p class="text-xs font-mono uppercase tracking-[0.5em] text-acid">Journey log</p>
+            <h2 class="text-4xl font-mono uppercase leading-none text-acid">My last decade in AI</h2>
+            <p>Last decade, I got a chance to work on some large scale projects:</p>
+            <div class="experience-projects">
+              <a class="experience-badge-card experience-badge-card--peach" href="https://ethz.ch/en/news-and-events/eth-news/news/2025/09/press-release-apertus-a-fully-open-transparent-multilingual-language-model.html" target="_blank" rel="noreferrer">
+                Swiss AI initiative
+                <span>trained a 70B Swiss LLM (Apertus) from scratch.</span>
+              </a>
+              <a class="experience-badge-card experience-badge-card--lilac" href="https://agi.safe.ai" target="_blank" rel="noreferrer">
+                Humanity Last Exam
+                <span>ultimate challenge crafted for LLMs.</span>
+              </a>
+              <a class="experience-badge-card experience-badge-card--acid" href="https://arxiv.org/abs/2206.04615" target="_blank" rel="noreferrer">
+                Big Bench
+                <span>stress-tested the broader reasoning capabilities of models.</span>
+              </a>
+              <a class="experience-badge-card experience-badge-card--sand" href="https://arxiv.org/abs/2510.08697" target="_blank" rel="noreferrer">
+                Big Code Arena
+                <span>competition-grade evaluation for coding models.</span>
+              </a>
 
 
-									</ul>
-								</header>
+          </div>
+          </div>
+        <ul class="story-grid">
+          <li class="story-card">
+            <div class="story-card__label">PhD</div>
+            <h3>ETH Zürich · 2021—2025</h3>
+            <p>Did research on distillation, refinement, and decomposition with <a class="link-simple" href="https://lre.inf.ethz.ch" target="_blank" rel="noreferrer"> Prof. Mrinmaya Sachan </a>(ETH) and <a class="link-simple" href="https://www.linkedin.com/in/nicholas-monath-8627581aa" target="_blank" rel="noreferrer"> Nicholas Monath </a> (Meta Super Intelligence).</p>
+            <div class="story-chip-row">
+              <span class="story-chip">Switzerland</span>
+            </div>
+          </li>
+          <li class="story-card">
+            <div class="story-card__label">Internships</div>
+            <h3>Meta · MSR · Alexa AI</h3>
+            <p>Worked with <a class="link-simple" href="http://asli.us" target="_blank" rel="noreferrer"> Asli Celikyilmaz </a> & <a class="link-simple" href="https://scholar.google.com/citations?user=lMkTx0EAAAAJ&hl=en" target="_blank" rel="noreferrer"> Jason Weston</a> at FAIR, Meta, with <a class="link-simple" href="https://patrickxia.me" target="_blank" rel="noreferrer"> Patrick Xia </a> & <a class="link-simple" href="https://www.cs.jhu.edu/~jason/" target="_blank" rel="noreferrer"> Jason Eisner </a> at Microsoft Research, and at Alexa AI during my masters.</p>
+            <div class="story-chip-row">
+              <span class="story-chip">Seattle, US</span>
+            </div>
+          </li>
+          <li class="story-card">
+            <div class="story-card__label">Before PhD</div>
+            <h3>Masters· NeuralSpace</h3>
+            <p>Worked with <a class="link-simple" href="https://www.ltu.se/en/staff/m/marcus-liwicki" target="_blank" rel="noreferrer"> Marcus Liwicki </a>(RPTU) and <a class="link-simple" href="https://human.ait.kyushu-u.ac.jp/~uchida/index-e.html" target="_blank" rel="noreferrer">Seiichi Uchida</a> (Kyushu) during my Masters. I was also the founder of  <a class="link-simple" href="https://www.neuralspace.ai" target="_blank" rel="noreferrer">NeuralSpace</a>, a no-code platform for multilingual AI.</p>
+            <div class="story-chip-row">
+              <span class="story-chip">Germany</span>
+              <span class="story-chip">Japan</span>
+            </div>
+          </li>
+        </ul>
+      </section>
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, I’m Kumar Shridhar</h1>
-											<p>I am a <b>final year Ph.D. student</b> at <a href="https://www.mrinmaya.io/">ETH Zürich</a> in Switzerland, supervised by <a href="https://inf.ethz.ch/people/person-detail.MjYyNzc4.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html">Prof. Mrinmaya Sachan </a> (ETH),  and <a href = "https://people.cs.umass.edu/~nmonath/"> Nicholas Monath </a> (Google DeepMind). </p>
-										</header>
-										<p>My research interest focuses on exploring the <b>reasoning capabilities of large language models (LLMs)</b> and enhancing the reasoning skills of smaller models through effective <b>distillation</b> techniques.
-											Broadly, I am also exploring other machine learning areas such as <b>alignment</b>, <b>autonomous agents</b>, and <b>multimodal models</b>.
+      <section
+        id="connect"
+        data-scroll
+        class="grid gap-8 rounded-[32px] border-4 border-ink bg-peach/60 p-10 shadow-brutal md:grid-cols-[1.1fr,0.9fr]"
+      >
+        <div class="space-y-7">
+          <span class="contact-label badge">Contact</span>
+          <h2 class="contact-title">
+            Let's<br />
+            Connect
+          </h2>
+          <p class="text-lg leading-relaxed text-night">
+            Thoughtful emails, spicy prototypes, student collabs, event invites—send them all. I answer fastest when you
+            include context and write yourself. 
+          </p>
 
-												<br> <br>
-											During my PhD, I spent my summers as an intern at <b>FAIR, Meta</b> with <a href = "http://asli.us/">Asli Celikyilmaz </a> on agent-based 
-											reasoning, at <b>Microsoft Research</b> with <a href = "https://patrickxia.me/">Patrick Xia </a> and <a href = "https://www.cs.jhu.edu/~jason/">Jason Eisner </a> 
-											on improving the reasoning capabilities of LLMs by revising their output, and
-											at <b>Amazon Alexa AI</b> on setting constraints on the output space of a neural network. 
-											<br> <br>
-											I have experience with <b>fine-tuning LLMs at scale</b> (up to Llama 70B), <b> distilling reasoning capabilities from 
-											larger models (GPT-4, Claude, Llama 70B) to smaller models</b> (Llama, Mistral, T5, GPT-2), and <b> aligning LLMs to  generate more accurate 
-											and contextually appropriate responses (PPO, DPO,RLHF)</b>. 
-											<br> <br>
-											Before starting my PhD, I gained valuable experience in researching and deploying conversational AI systems  at <a href = "https://insiders-technologies.com/en/">Insiders Technology GmbH </a> 
-											and <a href = "https://www.neuralspace.ai/">NeuralSpace </a>.
-											I also worked with Prof. <a href="https://www.ltu.se/staff/m/marliw-1.177225?l=en"> Marcus Liwicki </a> and Prof. 
-											<a href = "https://human.ait.kyushu-u.ac.jp/~uchida/index-e.html" >Seiichi Uchida </a> during my masters studies.
-											<br> <br>
-											In my free time, I enjoy <b>playing tennis, reading about conspiracy theories</b>,  and <b>collecting sneakers</b>.
-											</p>
-										<ul class="actions">
-											<li><a href="https://drive.google.com/file/d/18C_s2xjMzuxl9RHi64kXgGbzOK8XL5bf/view" class="button big">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image object">
-										<img src="images/main_pic.jpg" alt="" />
-									</span>
-								</section>
+          <a
+          href="mailto:shridhar.stark@gmail.com"
+          class="contact-button contact-button--primary"
+          >Email ↗</a
+        >
 
+        </div>
+        <ul class="contact-stack space-y-4 text-sm font-mono uppercase tracking-[0.2em]">
+        
+          <li class="social-chip">
+            <div class="social-chip__label">
+              <span>Twitter</span>
+              <span class="dot"></span>
+              <span>Recent Updates</span>
+            </div>
+            <a class="social-chip__value" href="https://twitter.com/JupyterAI">@JupyterAI</a>
+          </li>
+          <li class="social-chip">
+            <div class="social-chip__label">
+              <span>GitHub</span>
+              <span class="dot"></span>
+              <span>Code</span>
+            </div>
+            <a class="social-chip__value" href="https://github.com/kumar-shridhar">/kumar-shridhar</a>
+          </li>
+          <li class="social-chip">
+            <div class="social-chip__label">
+              <span>LinkedIn</span>
+              <span class="dot"></span>
+              <span>Talks</span>
+            </div>
+            <a class="social-chip__value" href="https://www.linkedin.com/in/kumar-shridhar">/kumar-shridhar</a>
+          </li>
+          <li class="social-chip">
+            <div class="social-chip__label">
+              <span>Research</span>
+              <span class="dot"></span>
+              <span>Next big Idea</span>
+            </div>
+            <a class="social-chip__value" href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en">Kumar Shridhar</a>
+          </li>
+        </ul>
+      </section>
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Research Areas</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="distillation.html" class="image"><img src="images/distillation_logo.webp" alt="" /></a>
-											<h3>Knowledge Distillation</h3>
-											<p> Teaching reasoning capabilities to smaller models using effective knowledge distillation techniques.  </p>
-											<ul class="actions">
-												<li><a href="distillation.html" class="button">Read More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="refinement.html" class="image"><img src="images/refinement_logo.webp" alt="" /></a>
-											<h3>Refinement in LLMs</h3>
-											<p>A refinement framework that explores how reasoning can be improved in LLMs through resampling and selection.</p>
-											<ul class="actions">
-												<li><a href="refinement.html" class="button">Read More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="decomposition.html" class="image"><img src="images/decomposition_logo.webp" alt="" /></a>
-											<h3>Problem Decomposition</h3>
-											<p>Can decomposition of problem into simpler problems assist students in learning a concept better?</p>
-											<ul class="actions">
-												<li><a href="decomposition.html" class="button">Read More</a></li>
-											</ul>
-										</article>
-									</div>
-								</section>
+    </main>
 
-						</div>
-					</div>
+    <footer class="border-t-4 border-ink bg-night py-6 text-center text-sm font-mono uppercase tracking-[0.4em] text-sand">
+      © 2025 Kumar Shridhar
+    </footer>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-
-								<section id="search" class="alt">
-									<form id="searchForm">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li>
-											<span class="opener">Projects</span>
-											<ul>
-												<li><a href="distillation.html">Distillation</a></li>
-												<li><a href="refinement.html">Refinement in LLMs</a></li>
-												<li><a href="decomposition.html">Decomposition</a></li>
-											</ul>
-										</li>
-								</nav>
-
-
-								<section>
-									<header class="major">
-										<h2>Get in touch</h2>
-									</header>
-									<p>If you are interested in collaborating, please feel free to send an email.</p>
-									<ul class="contact">
-										<li class="icon solid fa-envelope"><a href="mailto:shridhar.stark@gmail.com">Email</a></li>
-										<li class="icon solid fa-pen"><a href="https://twitter.com/JupyterAI">Twitter</a></li>
-										<li class="icon solid fa-home">Zurich, Switzerland</li>
-									</ul>
-								</section>
-
-
-
-							<!-- Section -->
-
-						</div>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="assets/js/search.js"></script>
-
-	</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
