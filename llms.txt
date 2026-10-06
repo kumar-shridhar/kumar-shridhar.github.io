@@ -1,0 +1,158 @@
+# Shridhar
+
+> LLM researcher working across pre-training, post-training, and agentic systems. Research Scientist at Datadog in New York, ETH Zurich PhD, and contributor to pre-training the Apertus open foundation models.
+
+Canonical profile: https://kumar-shridhar.github.io/
+Last updated: 2026-09-24
+Public name: Shridhar
+Publication name: Kumar Shridhar
+Also known as: Shridhar Kumar
+Email: shridhar.stark@gmail.com
+Google Scholar: https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en
+GitHub: https://github.com/kumar-shridhar
+LinkedIn: https://www.linkedin.com/in/kumar-shridhar
+X / Twitter: https://twitter.com/JupyterAI
+CV: https://drive.google.com/file/d/1merRZUqp33BpM1I7ZM1DzFn-1TI5zs6u/view?usp=sharing
+
+## Research profile
+
+Shridhar's research connects how models solve complex problems, learn from feedback, and are trained and evaluated at scale. During his PhD at ETH Zurich, he worked on agentic pipelines spanning planning, reasoning, distillation, and refinement. His experience includes pre-training Apertus, reasoning and post-training methods, efficient model routing, and collaborative LLM benchmarks.
+
+At Datadog, he works on LLM post-training, asynchronous reinforcement learning, and long-horizon agents: the environments agents act in, rewards and verifiers that assess their behavior, and training systems that use feedback to improve models. Current-role descriptions are first-party profile information; the published results below describe the cited methods and collaborations.
+
+His work spans designing learning methods, implementing training experiments, evaluating changes in model behavior, and collaborating with researchers and engineers to improve training data, reward signals, and evaluation.
+
+## Experience
+
+- Datadog, 2026-present: Research Scientist; LLM post-training, asynchronous RL, and long-horizon agents. New York.
+- Ema AI, 2025: Research on model routing across accuracy, latency, and inference cost; Select-then-Route.
+- ETH Zurich, 2021-2025: PhD research in planning, reasoning, decomposition, knowledge distillation, refinement, and evaluation.
+- Meta FAIR: Research internship on selective refinement and trust; ART.
+- Microsoft Research: Research internship on reasoning with revisions and selection; SCREWS.
+- Swiss AI Initiative: Contributed to pre-training Apertus; co-author on the technical report for open multilingual 8B and 70B models. Models released in 2025; ACL publication in 2026. This was a collaborative model release.
+
+## Selected results
+
+- Pre-training: Contributed to Apertus, the open 8B and 70B model family pretrained on 15 trillion tokens. Source: https://aclanthology.org/2026.acl-long.2172/
+- Select-then-Route: 94.3% accuracy versus 91.7% for the best single model, with 4x lower inference cost across six benchmarks. Source: https://aclanthology.org/2025.emnlp-industry.28/
+- ART: reported gains of five points over self-refinement baselines on two multi-step reasoning tasks. Source: https://aclanthology.org/2024.naacl-long.327/
+- Evaluation: Contributions to Humanity's Last Exam (HLE), BIG-bench, and BigCodeArena span expert-level knowledge, diverse language-model capabilities, and execution-based code evaluation. The selected publication entries below distinguish authorship from consortium contribution and link to the original sources.
+
+First-author work includes reasoning distillation, Socratic Subquestions, ART, and SCREWS. Equal-contribution work includes SIKeD, Calibrating Large Language Models with Sample Consistency, SMART, and Learning to Drop Out. These roles are recorded in the bylines below.
+
+SIKeD is iterative knowledge distillation using on-policy student generations. It is distinct from the offline reinforcement-learning decomposition work and SMART's reinforcement-learning approach. Preprints, workshop papers, peer-reviewed papers, and large collaborations are labelled separately below.
+
+## Selected publications and collaborations
+
+* denotes equal contribution.
+
+- 2026 | ACL / peer-reviewed | Apertus: Democratizing Open and Compliant LLMs for Global Language Environments
+  Authors / contributors: Alejandro Hernández-Cano et al. · includes Kumar Shridhar
+  Summary: Presents fully open 8B and 70B multilingual models pretrained on 15 trillion tokens, with reproducible artifacts and explicit attention to data compliance.
+  Source: https://aclanthology.org/2026.acl-long.2172/
+  Resources: PDF: https://aclanthology.org/2026.acl-long.2172.pdf | Model: https://huggingface.co/swiss-ai/Apertus-70B-2509
+  Profile entry: https://kumar-shridhar.github.io/#paper-apertus-open-multilingual-llms
+
+- 2026 | Nature / peer-reviewed | A benchmark of expert-level academic questions to assess AI capabilities
+  Authors / contributors: Center for AI Safety, Scale AI, and the HLE Contributors Consortium · Kumar Shridhar is a consortium contributor
+  Summary: Builds a 2,500-question expert-level multimodal benchmark spanning dozens of subjects to measure frontier capability and calibration.
+  Source: https://www.nature.com/articles/s41586-025-09962-4
+  Profile entry: https://kumar-shridhar.github.io/#paper-humanitys-last-exam
+
+- 2025 | Findings of ACL / peer-reviewed | SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning
+  Authors / contributors: Shivam Adarsh, Kumar Shridhar*, Caglar Gulcehre, Nicholas Monath, Mrinmaya Sachan
+  Summary: Combines teacher data with a smaller model’s own on-policy generations so the student can learn multiple reasoning strategies and select among them task by task.
+  Source: https://aclanthology.org/2025.findings-acl.513/
+  Resources: PDF: https://aclanthology.org/2025.findings-acl.513.pdf | Code: https://github.com/kumar-shridhar/SIKeD
+  Profile entry: https://kumar-shridhar.github.io/#paper-siked-iterative-knowledge-distillation
+
+- 2025 | EMNLP Industry / peer-reviewed | Select-then-Route: Taxonomy guided Routing for LLMs
+  Authors / contributors: Soham Shah, Kumar Shridhar
+  Summary: Narrows candidate models with a learned taxonomy and then routes through a confidence-based cascade, improving accuracy while reducing inference cost across six benchmarks.
+  Source: https://aclanthology.org/2025.emnlp-industry.28/
+  Resources: PDF: https://aclanthology.org/2025.emnlp-industry.28.pdf
+  Profile entry: https://kumar-shridhar.github.io/#paper-select-then-route
+
+- 2025 | AAAI / peer-reviewed | Calibrating Large Language Models with Sample Consistency
+  Authors / contributors: Qing Lyu, Kumar Shridhar*, Chaitanya Malaviya, Li Zhang, Yanai Elazar, Niket Tandon, Marianna Apidianaki, Mrinmaya Sachan, Chris Callison-Burch
+  Summary: Derives confidence from consistency across sampled generations and evaluates calibration across eleven language models and nine reasoning datasets.
+  Source: https://ojs.aaai.org/index.php/AAAI/article/view/34120
+  Resources: PDF: https://ojs.aaai.org/index.php/AAAI/article/download/34120/36275
+  Profile entry: https://kumar-shridhar.github.io/#paper-sample-consistency-calibration
+
+- 2025 | Findings of ACL / peer-reviewed | First-Step Advantage: Importance of Starting Right in Multi-Step Math Reasoning
+  Authors / contributors: Kushal Jain, Moritz Miller, Niket Tandon, Kumar Shridhar
+  Summary: Studies the leverage of the first reasoning step and trains smaller models to ask how a solution should begin before generating the full rationale.
+  Source: https://aclanthology.org/2025.findings-acl.42/
+  Resources: PDF: https://aclanthology.org/2025.findings-acl.42.pdf
+  Profile entry: https://kumar-shridhar.github.io/#paper-first-step-advantage
+
+- 2025 | arXiv / preprint | BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution
+  Authors / contributors: Terry Yue Zhuo et al. · includes Kumar Shridhar
+  Summary: Introduces an execution-backed human evaluation platform for code generation, grounded in more than 14,000 coding conversations and 4,700 multi-turn preferences.
+  Source: https://arxiv.org/abs/2510.08697
+  Resources: PDF: https://arxiv.org/pdf/2510.08697
+  Profile entry: https://kumar-shridhar.github.io/#paper-bigcodearena
+
+- 2024 | NAACL / peer-reviewed | The ART of LLM Refinement: Ask, Refine, and Trust
+  Authors / contributors: Kumar Shridhar, Koustuv Sinha, Andrew Cohen, Tianlu Wang, Ping Yu, Ramakanth Pasunuru, Mrinmaya Sachan, Jason Weston, Asli Celikyilmaz
+  Summary: Learns when a language model should revise an answer and whether the revision should be trusted, separating refinement from the decision to accept it.
+  Source: https://aclanthology.org/2024.naacl-long.327/
+  Resources: PDF: https://aclanthology.org/2024.naacl-long.327.pdf
+  Profile entry: https://kumar-shridhar.github.io/#paper-ask-refine-trust
+
+- 2024 | ICML Workshops / workshop paper | Distilling LLMs’ Decomposition Abilities into Compact Language Models
+  Authors / contributors: Denis Tarasov, Kumar Shridhar
+  Summary: Uses offline reinforcement learning and larger-model feedback to teach compact language models how to decompose complex reasoning problems.
+  Source: https://arxiv.org/abs/2402.01812
+  Resources: PDF: https://arxiv.org/pdf/2402.01812 | Code: https://github.com/DT6A/GSM8K-AI-SubQ
+  Profile entry: https://kumar-shridhar.github.io/#paper-decomposition-offline-rl
+
+- 2024 | arXiv / preprint | SMART: Self-learning Meta-strategy Agent for Reasoning Tasks
+  Authors / contributors: Rongxing Liu, Kumar Shridhar*, Manish Prajapat, Patrick Xia, Mrinmaya Sachan
+  Summary: Models reasoning-strategy selection as a Markov decision process and uses reinforcement learning so a model can internalize which strategy works for each task.
+  Source: https://arxiv.org/abs/2410.16128
+  Resources: PDF: https://arxiv.org/pdf/2410.16128 | Code: https://github.com/kumar-shridhar/SMART/
+  Profile entry: https://kumar-shridhar.github.io/#paper-smart-meta-strategy-agent
+
+- 2023 | Findings of ACL / peer-reviewed | Distilling Reasoning Capabilities into Smaller Language Models
+  Authors / contributors: Kumar Shridhar, Alessandro Stolfo, Mrinmaya Sachan
+  Summary: Distills Socratic chain-of-thought into cooperating decomposer and solver models, transferring reasoning into substantially smaller language models.
+  Source: https://aclanthology.org/2023.findings-acl.441/
+  Resources: PDF: https://aclanthology.org/2023.findings-acl.441.pdf | Code: https://github.com/kumar-shridhar/Distiiling-LM
+  Profile entry: https://kumar-shridhar.github.io/#paper-distilling-reasoning-capabilities
+
+- 2023 | arXiv / preprint | SCREWS: A Modular Framework for Reasoning with Revisions
+  Authors / contributors: Kumar Shridhar, Harsh Jhamtani, Hao Fang, Benjamin Van Durme, Jason Eisner, Patrick Xia
+  Summary: Separates reasoning with revisions into sampling, conditional resampling, and selection so a system can explore a new path and reject a harmful revision.
+  Source: https://arxiv.org/abs/2309.13075
+  Resources: PDF: https://arxiv.org/pdf/2309.13075 | Code: https://github.com/kumar-shridhar/Screws
+  Profile entry: https://kumar-shridhar.github.io/#paper-screws-reasoning-revisions
+
+- 2023 | TMLR / peer-reviewed | Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models
+  Authors / contributors: Aarohi Srivastava et al. · includes Kumar Shridhar
+  Summary: Introduces 204 diverse tasks for characterizing scaling behavior, calibration, emerging capabilities, and model limitations.
+  Source: https://arxiv.org/abs/2206.04615
+  Resources: PDF: https://arxiv.org/pdf/2206.04615
+  Profile entry: https://kumar-shridhar.github.io/#paper-big-bench
+
+- 2022 | EMNLP / peer-reviewed | Automatic Generation of Socratic Subquestions for Teaching Math Word Problems
+  Authors / contributors: Kumar Shridhar, Jakub Macina, Mennatallah El-Assady, Tanmay Sinha, Manu Kapur, Mrinmaya Sachan
+  Summary: Uses conditioned generation and reinforcement learning to produce didactically useful Socratic subquestions for mathematical problem solving.
+  Source: https://aclanthology.org/2022.emnlp-main.277/
+  Resources: PDF: https://aclanthology.org/2022.emnlp-main.277.pdf | Code: https://github.com/eth-nlped/socratic-generation
+  Profile entry: https://kumar-shridhar.github.io/#paper-socratic-subquestions
+
+- 2022 | NeurIPS / peer-reviewed | Learning to Drop Out: An Adversarial Approach to Training Sequence VAEs
+  Authors / contributors: Djordje Miladinovic, Kumar Shridhar*, Kushal Jain, Max Paulus, Joachim M Buhmann, Carl Allen
+  Summary: An adversarial dropout strategy improves sequence VAE training by addressing posterior collapse and increasing the information captured in latent representations.
+  Source: https://proceedings.neurips.cc/paper_files/paper/2022/hash/3ed57b293db0aab7cc30c44f45262348-Abstract-Conference.html
+  Profile entry: https://kumar-shridhar.github.io/#paper-learning-to-drop-out
+
+## Profile sections
+
+- Research story and experience: https://kumar-shridhar.github.io/#story
+- Publications: https://kumar-shridhar.github.io/#publications
+- Contact: https://kumar-shridhar.github.io/#connect
+
+The site contains a selected record. Google Scholar and the CV link above provide broader research and career context.

@@ -1,345 +1,619 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kumar Shridhar </title>
-    <meta
-      name="description"
-      content="Kumar Shridhar is a Machine Learning researcher obsessed with making reasoning models."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              sand: '#f6f2ea',
-              night: '#0f172a',
-              ink: '#1c1c1c',
-              acid: '#c6ff3f',
-              lilac: '#b7a6ff',
-              peach: '#ffb38a',
-            },
-            fontFamily: {
-              grotesk: ['"Space Grotesk"', 'sans-serif'],
-              mono: ['"Space Mono"', 'monospace'],
-            },
-            boxShadow: {
-              brutal: '8px 8px 0 0 rgba(12,18,32,0.75)',
-              'brutal-soft': '4px 4px 0 0 rgba(12,18,32,0.5)',
-            },
-          },
-        },
-      };
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body class="font-grotesk bg-sand text-ink selection:bg-acid selection:text-ink antialiased">
-    <div class="grain-layer" aria-hidden="true"></div>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Shridhar | LLM Pre-training, Post-training &amp; RL</title>
+  <meta name="description" content="Shridhar (Kumar Shridhar), Research Scientist at Datadog. LLM pre-training with Apertus, post-training, asynchronous RL, and long-horizon agents. ETH Zurich PhD." />
+  <meta name="author" content="Shridhar" />
+  <link rel="canonical" href="https://kumar-shridhar.github.io/" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#F6F1E8" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
 
-    <header class="sticky top-0 z-40 border-b-4 border-ink bg-sand/95 backdrop-blur-sm">
-      <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-5">
-        <a href="#hero" class="text-2xl font-mono tracking-tight uppercase text-ink">Kumar Shridhar<span class="text-night">.</span></a>
-        <nav class="hidden items-center gap-6 text-sm font-mono uppercase tracking-widest md:flex">
-          <a class="nav-link" href="#hero">Intro</a>
-          <a class="nav-link" href="#work">Research</a>
-          <a class="nav-link" href="#experience">Experience</a>
-          <a class="nav-link" href="#connect">Connect</a>
-        </nav>
-        <a
-          href="mailto:shridhar.stark@gmail.com"
-          class="relative inline-flex items-center gap-2 border-3 border-ink bg-acid px-4 py-2 text-xs font-mono uppercase tracking-[0.3em] text-ink shadow-brutal transition hover:-translate-y-1"
-        >
-          Ping me
-          <span aria-hidden="true">↗</span>
-        </a>
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="Shridhar | LLM Pre-training, Post-training &amp; RL" />
+  <meta property="og:description" content="Research Scientist at Datadog and ETH Zurich PhD. Pre-training with Apertus; post-training, asynchronous reinforcement learning, and long-horizon agents." />
+  <meta property="og:url" content="https://kumar-shridhar.github.io/" />
+  <meta property="og:image" content="https://kumar-shridhar.github.io/images/main_pic.jpg" />
+  <meta property="og:image:alt" content="Shridhar at Glacier 3000 in the Swiss Alps" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@JupyterAI" />
+  <meta name="twitter:title" content="Shridhar | LLM Pre-training, Post-training &amp; RL" />
+  <meta name="twitter:description" content="Research Scientist at Datadog and ETH Zurich PhD. Pre-training with Apertus; post-training, asynchronous reinforcement learning, and long-horizon agents." />
+  <meta name="twitter:image" content="https://kumar-shridhar.github.io/images/main_pic.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://kumar-shridhar.github.io/#profile",
+    "url": "https://kumar-shridhar.github.io/",
+    "name": "Shridhar - Research Scientist",
+    "dateModified": "2026-09-24",
+    "inLanguage": "en",
+    "mainEntity": {
+    "@type": "Person",
+    "@id": "https://kumar-shridhar.github.io/#person",
+    "name": "Shridhar",
+    "alternateName": ["Kumar Shridhar", "Shridhar Kumar"],
+    "jobTitle": "Research Scientist",
+    "description": "Research Scientist at Datadog working on LLM post-training, asynchronous reinforcement learning, and long-horizon agents. Contributed to pre-training Apertus 8B and 70B through the Swiss AI Initiative. ETH Zurich PhD research in planning, reasoning, distillation, and refinement, with prior work at Meta FAIR, Microsoft Research, and Ema AI.",
+    "worksFor": { "@type": "Organization", "name": "Datadog", "url": "https://www.datadoghq.com/" },
+    "homeLocation": { "@type": "City", "name": "New York City" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "ETH Zurich", "url": "https://ethz.ch/" },
+    "email": "mailto:shridhar.stark@gmail.com",
+    "image": "https://kumar-shridhar.github.io/images/main_pic.jpg",
+    "knowsAbout": [
+      "Large Language Models",
+      "Foundation Models",
+      "Pre-training",
+      "Post-training",
+      "Reinforcement Learning",
+      "Asynchronous Reinforcement Learning",
+      "Long-horizon Agents",
+      "Knowledge Distillation",
+      "Verifiers",
+      "Distributed Training",
+      "Evaluation",
+      "AI Infrastructure"
+    ],
+    "url": "https://kumar-shridhar.github.io/",
+    "sameAs": [
+      "https://twitter.com/JupyterAI",
+      "https://github.com/kumar-shridhar",
+      "https://www.linkedin.com/in/kumar-shridhar",
+      "https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en"
+    ]
+    }
+  }
+  </script>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%23141413'/%3E%3Ctext x='50' y='62' font-family='Arial, sans-serif' font-size='42' font-weight='900' text-anchor='middle' fill='%23E5A72F'%3ES%3C/text%3E%3C/svg%3E" />
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem("shridhar-academic-theme"); } catch (e) {}
+      if (theme !== "dark" && theme !== "light") {
+        theme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500..900&family=Inter:wght@400..900&family=JetBrains+Mono:wght@400..900&display=swap" rel="stylesheet" />
+  <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable research profile" />
+  <link rel="preload" as="image" type="image/webp" imagesrcset="images/main_pic-640.webp 640w, images/main_pic-960.webp 960w, images/main_pic-1320.webp 1320w" imagesizes="(max-width: 1060px) 400px, 440px" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css?v=65" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="#hero" aria-label="Shridhar home">
+        <span class="brand__mark" aria-hidden="true">S</span>
+        <span class="brand__text">Shridhar</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#story">Story</a>
+        <a href="#publications">Publications</a>
+        <a href="#connect">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme" data-enhanced hidden>
+          <span class="theme-icon theme-icon--sun" aria-hidden="true"></span>
+          <span class="theme-icon theme-icon--moon" aria-hidden="true"></span>
+        </button>
+        <a class="header-cta" href="mailto:shridhar.stark@gmail.com" data-inquiry-open>Contact</a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav" data-enhanced hidden>
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </header>
+    </div>
 
-    <section class="news-marquee-wrapper" aria-label="Latest news">
-      <div class="news-marquee">
-        <div class="news-marquee__track">
-          <span>I will be at NeurIPS in San Diego.</span>
-          <span>Our latest work on LLM Fusion paper got accepted at EMNLP 2025.</span>
+    <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" hidden>
+      <a href="#story">Story</a>
+      <a href="#publications">Publications</a>
+      <a href="#connect">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero academic-hero" id="hero" data-reveal>
+      <div class="hero__copy">
+        <p class="eyebrow eyebrow--live"><span></span> Research Scientist - Datadog - New York</p>
+        <h1 class="hero__title">Shridhar</h1>
+        <p class="hero__mantra">Models that reason, learn, and scale.</p>
+        <p class="hero__lede">
+          I work on <strong>LLM post-training, asynchronous reinforcement learning, and long-horizon agents</strong>
+          at Datadog.
+        </p>
+        <p class="hero__lede">
+          My experience spans <strong>pre-training LLMs to building agentic systems</strong>. I contributed to
+          pre-training <strong>Apertus</strong>, the Swiss AI Initiative’s open foundation models. During my
+          <strong>PhD at ETH Zurich</strong>, I worked on agentic pipelines spanning planning, reasoning,
+          distillation, and refinement.
+          Previously, I worked at <strong>Meta FAIR, Microsoft Research, and Ema AI</strong>.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="https://drive.google.com/file/d/1merRZUqp33BpM1I7ZM1DzFn-1TI5zs6u/view?usp=sharing" target="_blank" rel="noreferrer">View CV</a>
+          <a class="button button--secondary" href="#publications">Selected publications</a>
+          <a class="button button--glass" href="mailto:shridhar.stark@gmail.com" data-inquiry-open>Contact Shridhar</a>
         </div>
+        <ul class="hero-links" role="list" aria-label="Profiles">
+          <li>
+            <a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en" target="_blank" rel="noreferrer">
+              <span class="hero-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" focusable="false">
+                  <path d="M12 3 2.8 9.2 12 15.4l9.2-6.2L12 3Z" />
+                  <path d="M6.6 12.3v4.1c0 1.2 2.4 3.1 5.4 3.1s5.4-1.9 5.4-3.1v-4.1L12 16l-5.4-3.7Z" />
+                </svg>
+              </span>
+              <span>Scholar</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/kumar-shridhar" target="_blank" rel="noreferrer">
+              <span class="hero-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" focusable="false">
+                  <path d="M12 2.4a9.7 9.7 0 0 0-3.1 18.9c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1.1 1.6 1.1.9 1.5 2.4 1 2.9.8.1-.7.4-1 .7-1.2-2.2-.3-4.6-1.1-4.6-4.8 0-1.1.4-1.9 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.3 9.3 0 0 1 4.9 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.5 1 2.6 0 3.7-2.3 4.5-4.6 4.8.4.3.8 1 .8 2v2.3c0 .3.2.6.7.5A9.7 9.7 0 0 0 12 2.4Z" />
+                </svg>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kumar-shridhar" target="_blank" rel="noreferrer">
+              <span class="hero-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" focusable="false">
+                  <path d="M5.2 8.7h3.1v10.1H5.2V8.7Zm1.6-4.9a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6Zm3.5 4.9h3v1.4h.1c.4-.8 1.5-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.9v5.5H17v-4.9c0-1.2 0-2.7-1.6-2.7s-1.9 1.3-1.9 2.6v5h-3.2V8.7Z" />
+                </svg>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/JupyterAI" target="_blank" rel="noreferrer">
+              <span class="hero-link__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" role="img" focusable="false">
+                  <path d="M14.1 10.4 21.1 3h-2.9l-5.4 5.8L8.4 3H2.9l7.3 9.6L2.7 21h2.9l5.9-6.4 4.8 6.4h5.5l-7.7-10.6Zm-2 2.1-1.3-1.8-4-5.4H7l4.9 6.6 1.3 1.8 4.5 6h.2l-5.8-7.2Z" />
+                </svg>
+              </span>
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+        <div class="profile-credentials hero-credentials" aria-label="Research credentials">
+          <span>ETH Zurich PhD</span>
+          <span>Meta FAIR</span>
+          <span>Microsoft Research</span>
+          <span>Ema AI</span>
+          <span>Swiss AI Initiative</span>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-label="Portrait">
+        <figure class="portrait academic-portrait">
+          <picture>
+            <source type="image/webp" srcset="images/main_pic-640.webp 640w, images/main_pic-960.webp 960w, images/main_pic-1320.webp 1320w" sizes="(max-width: 1060px) 400px, 440px" />
+            <img src="images/main_pic.jpg?v=2" width="2451" height="2451" fetchpriority="high" alt="Shridhar standing on a snowy mountain range at Glacier 3000, Switzerland." />
+          </picture>
+          <figcaption>Glacier 3000 - Switzerland</figcaption>
+        </figure>
       </div>
     </section>
 
-    <main class="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-16">
-      <section
-        id="hero"
-        data-scroll
-        class="grid gap-10 rounded-[32px] border-4 border-ink bg-white p-10 shadow-brutal lg:grid-cols-[1.1fr,0.9fr]"
-      >
-        <div class="space-y-6">
-          <p class="text-sm font-mono uppercase tracking-[0.4em] text-night">ML Researcher — San Francisco</p>
-          <h1 class="text-5xl font-mono uppercase leading-none text-night md:text-6xl">
-            Hi! I am <br />
-            <span class="crazy-name">Shridhar</span><br />
-          </h1>
-          <p class="max-w-xl text-lg leading-relaxed text-night/80">
-            I am a Machine Learning researcher building language models that can deconstruct reasoning
-            problems, improvise, and critique themselves. Currently designing an effective LLM routing system at
-            <a class="link-simple link-ema" href="https://www.ema.co" target="_blank" rel="noreferrer">Ema</a>.
-          </p>
-
-          <div class="flex flex-wrap gap-4">
-            <a
-              href="https://drive.google.com/file/d/1T4N9zJyfRDfICTCe4U8t1xxgZ-3_zQj8/view?usp=sharing"
-              class="hero-cta bg-peach text-night"
-              >Download CV</a
-            >
-            <a href="#connect" class="hero-cta bg-lilac text-night">Collaborate</a>
-          </div>
-          <div class="grid gap-4 text-sm font-mono uppercase">
-            <div class="flex items-center gap-6">
-              <span class="badge">ETH Zürich</span>
-              <span class="badge">Meta FAIR</span>
-              <span class="badge">Microsoft Research</span>
-            </div>
-            <div class="flex flex-wrap gap-4 text-base">
-              <a class="hover:text-night" href="https://twitter.com/JupyterAI">Twitter ↗</a>
-              <a class="hover:text-night" href="https://github.com/kumar-shridhar">GitHub ↗</a>
-              <a class="hover:text-night" href="https://www.linkedin.com/in/kumar-shridhar">LinkedIn ↗</a>
-              <a class="hover:text-night" href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en"> Google Scholar ↗</a>
-            </div>
-          </div>
-          </div>
+    <section class="impact-strip" aria-label="Selected impact">
+      <article>
+        <span>Foundation-model training</span>
+        <strong>Apertus 8B &amp; 70B</strong>
+        <p>Contributed to pre-training the open multilingual model family on 15 trillion tokens.</p>
+        <a href="#paper-apertus-open-multilingual-llms">Apertus / ACL 2026</a>
+      </article>
+      <article>
+        <span>Model systems</span>
+        <strong>4x lower inference cost</strong>
+        <p>Select-then-Route reports 94.3% accuracy versus 91.7% for the best single model across six benchmarks.</p>
+        <a href="#paper-select-then-route">Select-then-Route / EMNLP 2025</a>
+      </article>
+      <article>
+        <span>LLM evaluation</span>
+        <strong>Evaluating LLMs</strong>
+        <p>Contributed to collaborative benchmarks spanning expert-level knowledge, diverse language-model capabilities, and execution-based code evaluation.</p>
+        <div class="impact-strip__links">
+          <a href="#paper-humanitys-last-exam">Humanity’s Last Exam</a>
+          <a href="#paper-big-bench">BIG-bench</a>
+          <a href="#paper-bigcodearena">BigCodeArena</a>
         </div>
-        <div class="relative overflow-hidden rounded-[24px] border-4 border-ink bg-lilac/30 p-4 shadow-brutal">
-          <img
-            src="images/main_pic.jpg"
-            alt="Kumar standing on a snowy mountain range"
-            class="relative h-full w-full rounded-[18px] border-4 border-ink object-cover shadow-brutal-soft"
-          />
-          <p class="mt-4 text-xs font-mono uppercase tracking-[0.4em] text-night">Glacier 3000 • Switzerland</p>
-        </div>
-      </section>
+      </article>
+    </section>
 
-      
-
-      <section
-        id="work"
-        data-scroll
-        class="space-y-10 rounded-[32px] border-4 border-ink bg-acid/40 p-10 shadow-brutal"
-      >
-        <div class="flex flex-wrap items-baseline gap-4">
-          <p class="text-xs font-mono uppercase tracking-[0.5em] text-night">Work</p>
-          <h2 class="text-4xl font-mono uppercase leading-none text-night">Selected Research</h2>
+    <section class="section story-section" id="story" data-reveal>
+      <article class="story-article" aria-labelledby="storyTitle">
+        <div class="story-kicker">
+          <p class="eyebrow">Research Story</p>
         </div>
-        <div class="grid gap-6 lg:grid-cols-2">
-          <article class="work-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--loud">ACL 2023</span>
-              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Distillation</span>
-            </div>
-            <h3>Distilling Reasoning into Smaller Models</h3>
-            <p>
-              Distill a large model's reasoning into small cooperating models 
-              that can learn to solve complex reasoning tasks nearly as well as much larger LMs 
-              but with far fewer parameters.
+
+        <div class="story-layout">
+          <div class="story-main">
+            <h2 id="storyTitle">From model reasoning to agent training.</h2>
+            <p class="story-lede">
+              My research connects three questions: how do models solve complex problems, how can they learn
+              from feedback, and how do we train and evaluate them at scale?
             </p>
-            <a class="underline" href="https://aclanthology.org/2023.findings-acl.441/">Paper ↗</a>
-          </article>
-
-          <article class="work-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--loud">ACL 2025</span>
-              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Distillation</span>
-            </div>
-            <h3>SIKeD: Self-guided Iterative Knowledge Distillation</h3>
             <p>
-            Self guided distillation where a student decides when to explore new learning with teacher 
-            and when to exploit and solidify what it knows.
+              During my PhD at <strong>ETH Zurich (2021-2025)</strong>, I studied how language models break down
+              problems, learn reasoning from stronger teachers, and judge their own answers. That work led to
+              <a href="#paper-socratic-subquestions">Socratic Subquestions</a>,
+              <a href="#paper-distilling-reasoning-capabilities">reasoning distillation</a>, and
+              <a href="#paper-siked-iterative-knowledge-distillation">SIKeD</a>, which combines teacher demonstrations
+              with a student's own on-policy generations.
             </p>
-            <a class="underline" href="https://aclanthology.org/2025.findings-acl.513/">Paper ↗</a>
-          </article>
+            <p>
+              At <strong>Microsoft Research</strong>, <a href="#paper-screws-reasoning-revisions">SCREWS</a>
+              explored how to generate, revise, and select answers. At <strong>Meta FAIR</strong>,
+              <a href="#paper-ask-refine-trust">ART</a> studied when to trust a revision and when to keep the
+              original answer. Later, at <strong>Ema AI</strong>,
+              <a href="#paper-select-then-route">Select-then-Route</a> addressed a related systems question:
+              which model should handle each query to balance accuracy, latency, and inference cost?
+            </p>
+            <p>
+              As part of the <strong>Swiss AI Initiative</strong>, I contributed to pre-training
+              <a href="#paper-apertus-open-multilingual-llms">Apertus</a>, an open 8B and 70B multilingual
+              model family. This added large-scale foundation-model training to my experience in reasoning
+              and post-training.
+            </p>
+            <p>
+              Today at <strong>Datadog</strong>, I work on asynchronous reinforcement learning for
+              long-horizon agents. This brings together the environments agents act in, the rewards and
+              verifiers that assess their behavior, and the training systems that use that feedback to
+              improve the model.
+            </p>
 
-          <article class="work-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--peach">NAACL 2024</span>
-              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Refinement</span>
+            <div class="story-summary">
+              <h3>Turning research ideas into trained models.</h3>
+              <p>I design learning methods, implement training experiments, and evaluate what changes in model
+                behavior. Working with researchers and engineers, I use those results to improve the next run,
+                whether that means changing the training data, the reward signal, or the evaluation setup.</p>
             </div>
-            <h3>The ART of LLM Refinement: ASK, REFINE, TRUST</h3>
-            <p>A refinement paradigm where an asker asks questions to decided when an LLM should refine its outputs 
-              and a truster decides whether to trust the refined answer.</p>
-            <a class="underline" href="https://arxiv.org/abs/2311.07961">Paper ↗</a>
-          </article>
-
-          <article class="work-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--lilac">EMNLP 2022</span>
-              <span class="text-sm font-mono uppercase tracking-[0.4em] text-night/60">Decomposition</span>
-            </div>
-            <h3>Socratic Subquestions for Teaching Math Word Problems</h3>
-            <p>Socratic style decomposition to guide language models to break complex problems into simpler ones and then solve it iteratively.</p>
-            <a class="underline" href="https://aclanthology.org/2022.emnlp-main.277/">Paper ↗</a>
-          </article>
-        </div>
-        <div class="grid gap-6 border-t-4 border-dashed border-ink pt-8 md:grid-cols-3">
-          <article class="project-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--lilac pill--mini">EMNLP 2025</span>
-              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Routing</span>
-            </div>
-            <h4>LLM Fusion</h4>
-            <p>Taxonomy guided Routing for LLMs.</p>
-            <a class="underline" href="https://aclanthology.org/2025.emnlp-industry.28/">Paper ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--brown pill--mini">AAAI 2025</span>
-              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Calibration</span>
-            </div>
-            <h4>LLM Calibration</h4>
-            <p>Gauging the confidence of LLMs. </p>
-            <a class="underline" href="https://ojs.aaai.org/index.php/AAAI/article/view/34120">Paper ↗</a>
-          </article>
-          <article class="project-card">
-            <div class="flex items-center justify-between">
-              <span class="pill pill--night pill--mini">NeurIPS 2022</span>
-              <span class="text-xs font-mono uppercase tracking-[0.4em] text-night/60">Generative</span>
-            </div>
-            <h4>Variational AutoEncoders</h4>
-            <p>Adversarial approach to train VAEs.</p>
-            <a class="underline" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/3ed57b293db0aab7cc30c44f45262348-Abstract-Conference.html">Paper ↗</a>
-          </article>
-        </div>
-      </section>
-
-      <section
-        id="experience"
-        data-scroll
-        class="space-y-8 rounded-[32px] border-4 border-ink bg-night text-sand p-10 shadow-brutal"
-      >
-        <div class="flex flex-wrap items-start justify-between gap-6">
-          <div class="space-y-4 max-w-3xl">
-            <p class="text-xs font-mono uppercase tracking-[0.5em] text-acid">Journey log</p>
-            <h2 class="text-4xl font-mono uppercase leading-none text-acid">My last decade in AI</h2>
-            <p>Last decade, I got a chance to work on some large scale projects:</p>
-            <div class="experience-projects">
-              <a class="experience-badge-card experience-badge-card--peach" href="https://ethz.ch/en/news-and-events/eth-news/news/2025/09/press-release-apertus-a-fully-open-transparent-multilingual-language-model.html" target="_blank" rel="noreferrer">
-                Swiss AI initiative
-                <span>trained a 70B Swiss LLM (Apertus) from scratch.</span>
-              </a>
-              <a class="experience-badge-card experience-badge-card--lilac" href="https://agi.safe.ai" target="_blank" rel="noreferrer">
-                Humanity Last Exam
-                <span>ultimate challenge crafted for LLMs.</span>
-              </a>
-              <a class="experience-badge-card experience-badge-card--acid" href="https://arxiv.org/abs/2206.04615" target="_blank" rel="noreferrer">
-                Big Bench
-                <span>stress-tested the broader reasoning capabilities of models.</span>
-              </a>
-              <a class="experience-badge-card experience-badge-card--sand" href="https://arxiv.org/abs/2510.08697" target="_blank" rel="noreferrer">
-                Big Code Arena
-                <span>competition-grade evaluation for coding models.</span>
-              </a>
-
-
           </div>
-          </div>
-        <ul class="story-grid">
-          <li class="story-card">
-            <div class="story-card__label">PhD</div>
-            <h3>ETH Zürich · 2021—2025</h3>
-            <p>Did research on distillation, refinement, and decomposition with <a class="link-simple" href="https://lre.inf.ethz.ch" target="_blank" rel="noreferrer"> Prof. Mrinmaya Sachan </a>(ETH) and <a class="link-simple" href="https://www.linkedin.com/in/nicholas-monath-8627581aa" target="_blank" rel="noreferrer"> Nicholas Monath </a> (Meta Super Intelligence).</p>
-            <div class="story-chip-row">
-              <span class="story-chip">Switzerland</span>
-            </div>
-          </li>
-          <li class="story-card">
-            <div class="story-card__label">Internships</div>
-            <h3>Meta · MSR · Alexa AI</h3>
-            <p>Worked with <a class="link-simple" href="http://asli.us" target="_blank" rel="noreferrer"> Asli Celikyilmaz </a> & <a class="link-simple" href="https://scholar.google.com/citations?user=lMkTx0EAAAAJ&hl=en" target="_blank" rel="noreferrer"> Jason Weston</a> at FAIR, Meta, with <a class="link-simple" href="https://patrickxia.me" target="_blank" rel="noreferrer"> Patrick Xia </a> & <a class="link-simple" href="https://www.cs.jhu.edu/~jason/" target="_blank" rel="noreferrer"> Jason Eisner </a> at Microsoft Research, and at Alexa AI during my masters.</p>
-            <div class="story-chip-row">
-              <span class="story-chip">Seattle, US</span>
-            </div>
-          </li>
-          <li class="story-card">
-            <div class="story-card__label">Before PhD</div>
-            <h3>Masters· NeuralSpace</h3>
-            <p>Worked with <a class="link-simple" href="https://www.ltu.se/en/staff/m/marcus-liwicki" target="_blank" rel="noreferrer"> Marcus Liwicki </a>(RPTU) and <a class="link-simple" href="https://human.ait.kyushu-u.ac.jp/~uchida/index-e.html" target="_blank" rel="noreferrer">Seiichi Uchida</a> (Kyushu) during my Masters. I was also the founder of  <a class="link-simple" href="https://www.neuralspace.ai" target="_blank" rel="noreferrer">NeuralSpace</a>, a no-code platform for multilingual AI.</p>
-            <div class="story-chip-row">
-              <span class="story-chip">Germany</span>
-              <span class="story-chip">Japan</span>
-            </div>
-          </li>
-        </ul>
-      </section>
 
-      <section
-        id="connect"
-        data-scroll
-        class="grid gap-8 rounded-[32px] border-4 border-ink bg-peach/60 p-10 shadow-brutal md:grid-cols-[1.1fr,0.9fr]"
-      >
-        <div class="space-y-7">
-          <span class="contact-label badge">Contact</span>
-          <h2 class="contact-title">
-            Let's<br />
-            Connect
-          </h2>
-          <p class="text-lg leading-relaxed text-night">
-            Thoughtful emails, spicy prototypes, student collabs, event invites—send them all. I answer fastest when you
-            include context and write yourself. 
-          </p>
-
-          <a
-          href="mailto:shridhar.stark@gmail.com"
-          class="contact-button contact-button--primary"
-          >Email ↗</a
-        >
-
+          <aside class="story-sidebar" aria-label="Condensed research profile">
+            <div class="story-fact">
+              <span>Research focus</span>
+              <strong>Post-training &amp; RL</strong>
+              <p>Asynchronous reinforcement learning, verifiers, and long-horizon agents.</p>
+            </div>
+            <div class="story-fact">
+              <span>Working range</span>
+              <strong>Pre-training to evaluation</strong>
+              <p>Open foundation models, reasoning distillation, calibration, and model routing.</p>
+            </div>
+            <div class="story-fact">
+              <span>Collaboration</span>
+              <strong>Across teams</strong>
+              <p>Academic research, industry labs, and the collaborative engineering of open model releases.</p>
+            </div>
+          </aside>
         </div>
-        <ul class="contact-stack space-y-4 text-sm font-mono uppercase tracking-[0.2em]">
-        
-          <li class="social-chip">
-            <div class="social-chip__label">
-              <span>Twitter</span>
-              <span class="dot"></span>
-              <span>Recent Updates</span>
-            </div>
-            <a class="social-chip__value" href="https://twitter.com/JupyterAI">@JupyterAI</a>
-          </li>
-          <li class="social-chip">
-            <div class="social-chip__label">
-              <span>GitHub</span>
-              <span class="dot"></span>
-              <span>Code</span>
-            </div>
-            <a class="social-chip__value" href="https://github.com/kumar-shridhar">/kumar-shridhar</a>
-          </li>
-          <li class="social-chip">
-            <div class="social-chip__label">
-              <span>LinkedIn</span>
-              <span class="dot"></span>
-              <span>Talks</span>
-            </div>
-            <a class="social-chip__value" href="https://www.linkedin.com/in/kumar-shridhar">/kumar-shridhar</a>
-          </li>
-          <li class="social-chip">
-            <div class="social-chip__label">
-              <span>Research</span>
-              <span class="dot"></span>
-              <span>Next big Idea</span>
-            </div>
-            <a class="social-chip__value" href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en">Kumar Shridhar</a>
-          </li>
-        </ul>
-      </section>
 
-    </main>
+        <ol class="story-timeline" role="list" aria-label="Experience narrative">
+          <li><span>2026-present</span><h3>Datadog</h3><p>Research Scientist. Asynchronous RL, post-training, and long-horizon agents.</p></li>
+          <li><span>2025</span><h3>Ema AI</h3><p>Model-routing research across accuracy, latency, and inference cost.</p></li>
+          <li><span>2021-2025</span><h3>ETH Zurich</h3><p>PhD research in reasoning, distillation, refinement, and evaluation.</p></li>
+          <li><span>Research internship</span><h3>Meta FAIR</h3><p>Selective refinement and trust with ART.</p></li>
+          <li><span>Research internship</span><h3>Microsoft Research</h3><p>Reasoning with revisions and selection with SCREWS.</p></li>
+          <li><span>Open-model collaboration</span><h3>Swiss AI Initiative</h3><p>Apertus 8B and 70B, released in 2025; technical report published at ACL 2026.</p></li>
+        </ol>
+      </article>
+    </section>
 
-    <footer class="border-t-4 border-ink bg-night py-6 text-center text-sm font-mono uppercase tracking-[0.4em] text-sand">
-      © 2025 Kumar Shridhar
-    </footer>
+    <section class="section publications" id="publications" data-reveal>
+      <div class="section-head publications__head">
+        <div>
+          <p class="eyebrow">Selected Publications</p>
+          <h2>The work behind the ideas.</h2>
+          <p class="publication-note">Published as <strong>Kumar Shridhar</strong>. Selected papers and collaborations;
+            <a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">full record on Google Scholar</a>.</p>
+          <p class="publication-legend"><span aria-hidden="true">*</span> Equal contribution</p>
+        </div>
+        <p class="paper-count" role="status" aria-live="polite" aria-atomic="true"><strong id="pubCount">15</strong> works</p>
+      </div>
 
-    <script src="script.js" defer></script>
-  </body>
+      <div class="paper-tools" aria-label="Publication tools" data-enhanced hidden>
+        <label class="paper-search">
+          <span>Search</span>
+          <input id="paperSearch" type="search" placeholder="paper, venue, topic..." autocomplete="off" />
+        </label>
+        <div class="filter-row" aria-label="Topic filters">
+          <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+          <button class="filter-chip" type="button" data-filter="pretraining">Pre-training</button>
+          <button class="filter-chip" type="button" data-filter="posttraining">Post-training</button>
+          <button class="filter-chip" type="button" data-filter="rl">RL</button>
+          <button class="filter-chip" type="button" data-filter="evaluation">Evaluation</button>
+          <button class="filter-chip" type="button" data-filter="infra">Infra</button>
+        </div>
+      </div>
+
+      <ol class="paper-list" id="paperList" role="list">
+        <li class="paper" id="paper-apertus-open-multilingual-llms" data-topic="pretraining infra" data-year="2026" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2026.acl-long.2172/">
+          <time class="paper__year" datetime="2026">2026</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--acl" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">ACL</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Apertus: Democratizing Open and Compliant LLMs for Global Language Environments</h3>
+            <p class="paper__authors">Alejandro Hernández-Cano et al. · includes <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Presents fully open 8B and 70B multilingual models pretrained on 15 trillion tokens, with reproducible artifacts and explicit attention to data compliance.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2026.acl-long.2172/" target="_blank" rel="noreferrer" aria-label="Read Apertus: Democratizing Open and Compliant LLMs for Global Language Environments">Paper</a>
+              <a href="https://aclanthology.org/2026.acl-long.2172.pdf" target="_blank" rel="noreferrer" aria-label="PDF: Apertus: Democratizing Open and Compliant LLMs for Global Language Environments">PDF</a>
+              <a href="https://huggingface.co/swiss-ai/Apertus-70B-2509" target="_blank" rel="noreferrer" aria-label="Model: Apertus: Democratizing Open and Compliant LLMs for Global Language Environments">Model</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-humanitys-last-exam" data-topic="evaluation" data-search="Humanity's Last Exam HLE" data-year="2026" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://www.nature.com/articles/s41586-025-09962-4">
+          <time class="paper__year" datetime="2026">2026</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--nature" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">Nature</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">A benchmark of expert-level academic questions to assess AI capabilities</h3>
+            <p class="paper__authors">Center for AI Safety, Scale AI, and the HLE Contributors Consortium · <span itemprop="contributor" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span> is a consortium contributor</p>
+            <p itemprop="description">Builds a 2,500-question expert-level multimodal benchmark spanning dozens of subjects to measure frontier capability and calibration.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://www.nature.com/articles/s41586-025-09962-4" target="_blank" rel="noreferrer" aria-label="Read A benchmark of expert-level academic questions to assess AI capabilities">Paper</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-siked-iterative-knowledge-distillation" data-topic="posttraining reasoning" data-year="2025" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2025.findings-acl.513/">
+          <time class="paper__year" datetime="2025">2025</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--acl" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">Findings of ACL</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Shivam Adarsh</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span><sup class="paper__equal" aria-label="Equal contribution" title="Equal contribution">*</sup></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Caglar Gulcehre</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Nicholas Monath</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span></p>
+            <p itemprop="description">Combines teacher data with a smaller model’s own on-policy generations so the student can learn multiple reasoning strategies and select among them task by task.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2025.findings-acl.513/" target="_blank" rel="noreferrer" aria-label="Read SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning">Paper</a>
+              <a href="https://aclanthology.org/2025.findings-acl.513.pdf" target="_blank" rel="noreferrer" aria-label="PDF: SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning">PDF</a>
+              <a href="https://github.com/kumar-shridhar/SIKeD" target="_blank" rel="noreferrer" aria-label="Code: SIKeD: Self-guided Iterative Knowledge Distillation for Mathematical Reasoning">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-select-then-route" data-topic="infra routing evaluation" data-year="2025" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2025.emnlp-industry.28/">
+          <time class="paper__year" datetime="2025">2025</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--emnlp" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">EMNLP Industry</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Select-then-Route: Taxonomy guided Routing for LLMs</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Soham Shah</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Narrows candidate models with a learned taxonomy and then routes through a confidence-based cascade, improving accuracy while reducing inference cost across six benchmarks.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2025.emnlp-industry.28/" target="_blank" rel="noreferrer" aria-label="Read Select-then-Route: Taxonomy guided Routing for LLMs">Paper</a>
+              <a href="https://aclanthology.org/2025.emnlp-industry.28.pdf" target="_blank" rel="noreferrer" aria-label="PDF: Select-then-Route: Taxonomy guided Routing for LLMs">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-sample-consistency-calibration" data-topic="evaluation reasoning" data-year="2025" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://ojs.aaai.org/index.php/AAAI/article/view/34120">
+          <time class="paper__year" datetime="2025">2025</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--aaai" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">AAAI</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Calibrating Large Language Models with Sample Consistency</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Qing Lyu</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span><sup class="paper__equal" aria-label="Equal contribution" title="Equal contribution">*</sup></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Chaitanya Malaviya</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Li Zhang</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Yanai Elazar</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Niket Tandon</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Marianna Apidianaki</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Chris Callison-Burch</span></span></p>
+            <p itemprop="description">Derives confidence from consistency across sampled generations and evaluates calibration across eleven language models and nine reasoning datasets.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://ojs.aaai.org/index.php/AAAI/article/view/34120" target="_blank" rel="noreferrer" aria-label="Read Calibrating Large Language Models with Sample Consistency">Paper</a>
+              <a href="https://ojs.aaai.org/index.php/AAAI/article/download/34120/36275" target="_blank" rel="noreferrer" aria-label="PDF: Calibrating Large Language Models with Sample Consistency">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-first-step-advantage" data-topic="posttraining reasoning" data-year="2025" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2025.findings-acl.42/">
+          <time class="paper__year" datetime="2025">2025</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--acl" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">Findings of ACL</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">First-Step Advantage: Importance of Starting Right in Multi-Step Math Reasoning</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Kushal Jain</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Moritz Miller</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Niket Tandon</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Studies the leverage of the first reasoning step and trains smaller models to ask how a solution should begin before generating the full rationale.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2025.findings-acl.42/" target="_blank" rel="noreferrer" aria-label="Read First-Step Advantage: Importance of Starting Right in Multi-Step Math Reasoning">Paper</a>
+              <a href="https://aclanthology.org/2025.findings-acl.42.pdf" target="_blank" rel="noreferrer" aria-label="PDF: First-Step Advantage: Importance of Starting Right in Multi-Step Math Reasoning">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-bigcodearena" data-topic="evaluation infra" data-year="2025" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://arxiv.org/abs/2510.08697">
+          <time class="paper__year" datetime="2025">2025</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--arxiv" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">arXiv</span></span><span class="paper__status">preprint</span></p>
+            <h3 itemprop="name">BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution</h3>
+            <p class="paper__authors">Terry Yue Zhuo et al. · includes <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Introduces an execution-backed human evaluation platform for code generation, grounded in more than 14,000 coding conversations and 4,700 multi-turn preferences.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://arxiv.org/abs/2510.08697" target="_blank" rel="noreferrer" aria-label="Read BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution">Preprint</a>
+              <a href="https://arxiv.org/pdf/2510.08697" target="_blank" rel="noreferrer" aria-label="PDF: BigCodeArena: Unveiling More Reliable Human Preferences in Code Generation via Execution">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-ask-refine-trust" data-topic="posttraining evaluation reasoning" data-year="2024" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2024.naacl-long.327/">
+          <time class="paper__year" datetime="2024">2024</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--naacl" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">NAACL</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">The ART of LLM Refinement: Ask, Refine, and Trust</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Koustuv Sinha</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Andrew Cohen</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Tianlu Wang</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Ping Yu</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Ramakanth Pasunuru</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jason Weston</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Asli Celikyilmaz</span></span></p>
+            <p itemprop="description">Learns when a language model should revise an answer and whether the revision should be trusted, separating refinement from the decision to accept it.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2024.naacl-long.327/" target="_blank" rel="noreferrer" aria-label="Read The ART of LLM Refinement: Ask, Refine, and Trust">Paper</a>
+              <a href="https://aclanthology.org/2024.naacl-long.327.pdf" target="_blank" rel="noreferrer" aria-label="PDF: The ART of LLM Refinement: Ask, Refine, and Trust">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-decomposition-offline-rl" data-topic="rl posttraining reasoning" data-year="2024" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://arxiv.org/abs/2402.01812">
+          <time class="paper__year" datetime="2024">2024</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--icml" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">ICML Workshops</span></span><span class="paper__status">workshop paper</span></p>
+            <h3 itemprop="name">Distilling LLMs’ Decomposition Abilities into Compact Language Models</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Denis Tarasov</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Uses offline reinforcement learning and larger-model feedback to teach compact language models how to decompose complex reasoning problems.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://arxiv.org/abs/2402.01812" target="_blank" rel="noreferrer" aria-label="Read Distilling LLMs’ Decomposition Abilities into Compact Language Models">Paper</a>
+              <a href="https://arxiv.org/pdf/2402.01812" target="_blank" rel="noreferrer" aria-label="PDF: Distilling LLMs’ Decomposition Abilities into Compact Language Models">PDF</a>
+              <a href="https://github.com/DT6A/GSM8K-AI-SubQ" target="_blank" rel="noreferrer" aria-label="Code: Distilling LLMs’ Decomposition Abilities into Compact Language Models">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-smart-meta-strategy-agent" data-topic="rl reasoning" data-year="2024" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://arxiv.org/abs/2410.16128">
+          <time class="paper__year" datetime="2024">2024</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--arxiv" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">arXiv</span></span><span class="paper__status">preprint</span></p>
+            <h3 itemprop="name">SMART: Self-learning Meta-strategy Agent for Reasoning Tasks</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Rongxing Liu</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span><sup class="paper__equal" aria-label="Equal contribution" title="Equal contribution">*</sup></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Manish Prajapat</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Patrick Xia</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span></p>
+            <p itemprop="description">Models reasoning-strategy selection as a Markov decision process and uses reinforcement learning so a model can internalize which strategy works for each task.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://arxiv.org/abs/2410.16128" target="_blank" rel="noreferrer" aria-label="Read SMART: Self-learning Meta-strategy Agent for Reasoning Tasks">Preprint</a>
+              <a href="https://arxiv.org/pdf/2410.16128" target="_blank" rel="noreferrer" aria-label="PDF: SMART: Self-learning Meta-strategy Agent for Reasoning Tasks">PDF</a>
+              <a href="https://github.com/kumar-shridhar/SMART/" target="_blank" rel="noreferrer" aria-label="Code: SMART: Self-learning Meta-strategy Agent for Reasoning Tasks">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-distilling-reasoning-capabilities" data-topic="posttraining reasoning" data-year="2023" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2023.findings-acl.441/">
+          <time class="paper__year" datetime="2023">2023</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--acl" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">Findings of ACL</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Distilling Reasoning Capabilities into Smaller Language Models</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Alessandro Stolfo</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span></p>
+            <p itemprop="description">Distills Socratic chain-of-thought into cooperating decomposer and solver models, transferring reasoning into substantially smaller language models.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2023.findings-acl.441/" target="_blank" rel="noreferrer" aria-label="Read Distilling Reasoning Capabilities into Smaller Language Models">Paper</a>
+              <a href="https://aclanthology.org/2023.findings-acl.441.pdf" target="_blank" rel="noreferrer" aria-label="PDF: Distilling Reasoning Capabilities into Smaller Language Models">PDF</a>
+              <a href="https://github.com/kumar-shridhar/Distiiling-LM" target="_blank" rel="noreferrer" aria-label="Code: Distilling Reasoning Capabilities into Smaller Language Models">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-screws-reasoning-revisions" data-topic="evaluation reasoning" data-year="2023" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://arxiv.org/abs/2309.13075">
+          <time class="paper__year" datetime="2023">2023</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--arxiv" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">arXiv</span></span><span class="paper__status">preprint</span></p>
+            <h3 itemprop="name">SCREWS: A Modular Framework for Reasoning with Revisions</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Harsh Jhamtani</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Hao Fang</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Benjamin Van Durme</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jason Eisner</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Patrick Xia</span></span></p>
+            <p itemprop="description">Separates reasoning with revisions into sampling, conditional resampling, and selection so a system can explore a new path and reject a harmful revision.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://arxiv.org/abs/2309.13075" target="_blank" rel="noreferrer" aria-label="Read SCREWS: A Modular Framework for Reasoning with Revisions">Preprint</a>
+              <a href="https://arxiv.org/pdf/2309.13075" target="_blank" rel="noreferrer" aria-label="PDF: SCREWS: A Modular Framework for Reasoning with Revisions">PDF</a>
+              <a href="https://github.com/kumar-shridhar/Screws" target="_blank" rel="noreferrer" aria-label="Code: SCREWS: A Modular Framework for Reasoning with Revisions">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-big-bench" data-topic="evaluation" data-search="BIG-bench BIG Bench" data-year="2023" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://arxiv.org/abs/2206.04615">
+          <time class="paper__year" datetime="2023">2023</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--tmlr" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">TMLR</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models</h3>
+            <p class="paper__authors">Aarohi Srivastava et al. · includes <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span></p>
+            <p itemprop="description">Introduces 204 diverse tasks for characterizing scaling behavior, calibration, emerging capabilities, and model limitations.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://arxiv.org/abs/2206.04615" target="_blank" rel="noreferrer" aria-label="Read Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models">Paper</a>
+              <a href="https://arxiv.org/pdf/2206.04615" target="_blank" rel="noreferrer" aria-label="PDF: Beyond the Imitation Game: Quantifying and extrapolating the capabilities of language models">PDF</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-socratic-subquestions" data-topic="rl reasoning" data-year="2022" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://aclanthology.org/2022.emnlp-main.277/">
+          <time class="paper__year" datetime="2022">2022</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--emnlp" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">EMNLP</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Automatic Generation of Socratic Subquestions for Teaching Math Word Problems</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Jakub Macina</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mennatallah El-Assady</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Tanmay Sinha</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Manu Kapur</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Mrinmaya Sachan</span></span></p>
+            <p itemprop="description">Uses conditioned generation and reinforcement learning to produce didactically useful Socratic subquestions for mathematical problem solving.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://aclanthology.org/2022.emnlp-main.277/" target="_blank" rel="noreferrer" aria-label="Read Automatic Generation of Socratic Subquestions for Teaching Math Word Problems">Paper</a>
+              <a href="https://aclanthology.org/2022.emnlp-main.277.pdf" target="_blank" rel="noreferrer" aria-label="PDF: Automatic Generation of Socratic Subquestions for Teaching Math Word Problems">PDF</a>
+              <a href="https://github.com/eth-nlped/socratic-generation" target="_blank" rel="noreferrer" aria-label="Code: Automatic Generation of Socratic Subquestions for Teaching Math Word Problems">Code</a>
+            </div>
+          </div>
+        </li>
+        <li class="paper" id="paper-learning-to-drop-out" data-topic="generative-modeling" data-search="VAE variational autoencoder" data-year="2022" itemscope itemtype="https://schema.org/ScholarlyArticle" itemid="https://proceedings.neurips.cc/paper_files/paper/2022/hash/3ed57b293db0aab7cc30c44f45262348-Abstract-Conference.html">
+          <time class="paper__year" datetime="2022">2022</time>
+          <div>
+            <p class="paper__venue"><span class="venue-tag venue-tag--neurips" itemprop="isPartOf" itemscope itemtype="https://schema.org/CreativeWork"><span itemprop="name">NeurIPS</span></span><span class="paper__status">peer-reviewed</span></p>
+            <h3 itemprop="name">Learning to Drop Out: An Adversarial Approach to Training Sequence VAEs</h3>
+            <p class="paper__authors"><span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Djordje Miladinovic</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person" itemid="https://kumar-shridhar.github.io/#person"><span itemprop="name"><strong>Kumar Shridhar</strong></span><sup class="paper__equal" aria-label="Equal contribution" title="Equal contribution">*</sup></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Kushal Jain</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Max Paulus</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Joachim M Buhmann</span></span>, <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">Carl Allen</span></span></p>
+            <p itemprop="description">An adversarial dropout strategy improves sequence VAE training by addressing posterior collapse and increasing the information captured in latent representations.</p>
+            <div class="paper__links">
+              <a itemprop="url" href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/3ed57b293db0aab7cc30c44f45262348-Abstract-Conference.html" target="_blank" rel="noreferrer" aria-label="Read Learning to Drop Out: An Adversarial Approach to Training Sequence VAEs">Paper</a>
+            </div>
+          </div>
+        </li>
+      </ol>
+      <p class="paper-empty" id="paperEmpty" hidden>No papers match that search.</p>
+    </section>
+
+    <section class="connect" id="connect" data-reveal>
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build better models.</h2>
+        <p>
+          For research roles, technical conversations, or collaborations in model training and evaluation,
+          get in touch. A little context about the team and the problem is a great place to start.
+        </p>
+        <a class="button button--primary" href="mailto:shridhar.stark@gmail.com" data-inquiry-open>Contact Shridhar</a>
+      </div>
+      <ul class="connect-links" role="list">
+        <li><span>Email</span><a href="mailto:shridhar.stark@gmail.com">shridhar.stark@gmail.com</a></li>
+        <li><span>Scholar</span><a href="https://scholar.google.com/citations?user=rR2qicwAAAAJ&hl=en" target="_blank" rel="noreferrer">Google Scholar</a></li>
+        <li><span>GitHub</span><a href="https://github.com/kumar-shridhar" target="_blank" rel="noreferrer">GitHub</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/kumar-shridhar" target="_blank" rel="noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Shridhar. Research in LLM pre-training and post-training.</p>
+    <nav class="footer-links" aria-label="Site resources"><a href="llms.txt">Text profile</a><a href="https://github.com/kumar-shridhar/kumar-shridhar.github.io" target="_blank" rel="noreferrer">Source</a></nav>
+  </footer>
+
+  <dialog class="studio-modal contact-modal" id="studioModal" aria-labelledby="studioModalTitle">
+    <div class="studio-modal__scrim" data-inquiry-close></div>
+    <div class="studio-modal__panel">
+      <div class="studio-form">
+        <header class="studio-form__head">
+          <div>
+            <p class="eyebrow">Contact Shridhar</p>
+            <h2 id="studioModalTitle">Start a conversation.</h2>
+          </div>
+          <button class="studio-modal__close" type="button" data-inquiry-close aria-label="Close contact modal">Close</button>
+        </header>
+
+        <form class="studio-pane is-active" id="studioInquiry">
+          <label class="form-block form-block--wide">
+            <span>Conversation type</span>
+            <select id="inquiryKind">
+              <option>Recruiting / hiring conversation</option>
+              <option>Research collaboration</option>
+              <option>Talk / workshop</option>
+              <option>Advising / review</option>
+            </select>
+          </label>
+          <label class="form-block">
+            <span>Name</span>
+            <input id="inquiryName" type="text" autocomplete="name" placeholder="Your name" />
+          </label>
+          <label class="form-block">
+            <span>Email</span>
+            <input id="inquiryEmail" type="email" autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <label class="form-block form-block--wide">
+            <span>Brief</span>
+            <textarea id="inquiryBrief" rows="5" placeholder="Role, team, model-training scope, timeline, or collaboration idea."></textarea>
+          </label>
+          <div class="studio-actions">
+            <button class="button button--primary button--small" id="prepareInquiry" type="submit">Prepare email</button>
+            <a class="button button--ghost button--small" id="preparedMail" href="mailto:shridhar.stark@gmail.com">Open mail app</a>
+            <p id="inquiryStatus" role="status" aria-live="polite">No data leaves this page until you open your mail app.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js?v=63" defer></script>
+</body>
 </html>
